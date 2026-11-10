@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "scene": "宿舍",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "你下楼买饭吗？顺便帮我带一份呗，我打游戏走不开。"
+      },
+      {
+        "speaker": "我",
+        "text": "行吧。"
+      }
+    ],
+    "target_phrase": "行吧",
+    "literal": "Alright then.",
+    "intent": "不想去，但不想为这点小事跟室友闹不愉快，先答应下来，心里已经记了一笔。",
+    "emotion": "无奈、敷衍、轻微不情愿",
+    "alternative": "行，不过下次换你带了。我这周作业堆得有点多。",
+    "device": "false_agreement"
+  },
+  {
+    "id": 2,
+    "scene": "办公室",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "这个需求明天上线前改一下，就调个颜色、加个字段，很快的。"
+      },
+      {
+        "speaker": "我",
+        "text": "行吧。"
+      }
+    ],
+    "target_phrase": "行吧",
+    "literal": "Alright.",
+    "intent": "表面接受，实际在表达「这又是一次临时加戏」的不满，并把责任边界推给对方的排期决定。",
+    "emotion": "压抑的不满、疲惫",
+    "alternative": "可以改。不过加字段会动到接口，明天上线有风险，我们把优先级排一下？",
+    "device": "false_agreement"
+  },
+  {
+    "id": 3,
+    "scene": "情侣约会",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "今天几号来着？……哦，好像是我们在一起的日子吧。"
+      },
+      {
+        "speaker": "我",
+        "text": "算了。"
+      }
+    ],
+    "target_phrase": "算了",
+    "literal": "Forget it.",
+    "intent": "不是真的算了，是失望累积到不想再提醒，等对方主动追问和补救。",
+    "emotion": "委屈、失望、赌气",
+    "alternative": "其实我挺在意的。你要是不记得，我会有点难过。",
+    "device": "silence_ending"
+  },
+  {
+    "id": 4,
+    "scene": "办公室会议室",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "这次汇报我来讲吧，数据这块我熟。"
+      },
+      {
+        "speaker": "我",
+        "text": "算了。"
+      }
+    ],
+    "target_phrase": "算了",
+    "literal": "Never mind.",
+    "intent": "当场不争，但把「功劳被拿走」这件事记下来，下一次会用别的方式划清界限。",
+    "emotion": "憋屈、克制的冷静",
+    "alternative": "数据是我整理的，我想自己讲这部分。要不我们分工，你讲结论我讲数据？",
+    "device": "silence_ending"
+  },
+  {
+    "id": 5,
+    "scene": "情侣日常",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "晚上想吃什么？你定。"
+      },
+      {
+        "speaker": "我",
+        "text": "随便。"
+      }
+    ],
+    "target_phrase": "随便",
+    "literal": "Whatever.",
+    "intent": "心里有明确偏好，但不肯先说，希望对方记得并主动猜中；猜不中就说明不够在意。",
+    "emotion": "别扭、隐性不满、试探",
+    "alternative": "我想吃上次那家火锅。你要是不想吃，我们换一个也行。",
+    "device": "understatement"
+  },
+  {
+    "id": 6,
+    "scene": "朋友群聊",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "周末去哪玩？你提一个，别又是我定。"
+      },
+      {
+        "speaker": "我",
+        "text": "随便。"
+      }
+    ],
+    "target_phrase": "随便",
+    "literal": "Anything works.",
+    "intent": "不想再当那个做决定又背锅的人，用「随便」把选择权和责任一起推回去。",
+    "emotion": "疲惫、敷衍、隐隐的对抗",
+    "alternative": "我这周有点累，不想跑远。要不就在家看片，你们定片子。",
+    "device": "deflection"
+  },
+  {
+    "id": 7,
+    "scene": "微信社交",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "好久没见了，这周出来聚聚？我请你吃饭。"
+      },
+      {
+        "speaker": "我",
+        "text": "这周有点忙，改天吧。"
+      }
+    ],
+    "target_phrase": "改天",
+    "literal": "Some other day.",
+    "intent": "礼貌拒绝，且没有真的打算再约；「改天」是不给具体时间的社交缓冲。",
+    "emotion": "客气、疏离、不想伤面子",
+    "alternative": "谢谢你还想着我。最近确实排不开，等我这边松一点我主动约你。",
+    "device": "understatement"
+  },
+  {
+    "id": 8,
+    "scene": "办公室工位",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "能不能先借我两万？下个月发工资就还你。"
+      },
+      {
+        "speaker": "我",
+        "text": "这个……改天再说吧。"
+      }
+    ],
+    "target_phrase": "改天",
+    "literal": "Let's talk about it another day.",
+    "intent": "拒绝借钱，但不想当场把关系弄僵，用拖延把话题挂起，实际不会有下文。",
+    "emotion": "尴尬、防备、为难",
+    "alternative": "这个数我确实拿不出来。你要不问问公司能不能预支，或者我帮你看看别的办法？",
+    "device": "understatement"
+  },
+  {
+    "id": 9,
+    "scene": "求职面试后",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "你的经历挺匹配的，我们再综合评估一下，有结果通知你。"
+      },
+      {
+        "speaker": "我",
+        "text": "好的，那我再看看。"
+      }
+    ],
+    "target_phrase": "再看看",
+    "literal": "I'll take another look.",
+    "intent": "听懂了自己是备选，用同样的模糊话术回应，同时暗示自己手上还有别的机会。",
+    "emotion": "失落、不甘、保持体面",
+    "alternative": "明白。方便给个大概的时间节点吗？我这边也在推进其他机会，好做个安排。",
+    "device": "understatement"
+  },
+  {
+    "id": 10,
+    "scene": "商场门店",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "这款今天最后一天活动价，真的很划算，要不要直接给你包起来？"
+      },
+      {
+        "speaker": "我",
+        "text": "我再看看。"
+      }
+    ],
+    "target_phrase": "再看看",
+    "literal": "I'll look around some more.",
+    "intent": "明确不买，但不想被继续推销，用「再看看」终止对话而不撕破脸。",
+    "emotion": "敷衍、轻微压力、保持礼貌",
+    "alternative": "谢谢，我今天先不买。需要的话我自己再看，你不用招呼我。",
+    "device": "deflection"
+  },
+  {
+    "id": 11,
+    "scene": "家庭电话",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "你看隔壁小王，孩子都上幼儿园了。你也该考虑考虑了吧？"
+      },
+      {
+        "speaker": "我",
+        "text": "行，你开心就好。"
+      }
+    ],
+    "target_phrase": "你开心就好",
+    "literal": "As long as you're happy.",
+    "intent": "不是真在祝她开心，是把「我不想聊这个话题」包成一句好话。话一出口，天就聊死了，还留了一点「你只在乎你自己」的刺。",
+    "emotion": "疲惫、隐忍、带刺的顺从",
+    "alternative": "妈，我知道你着急。这事我心里有数，有进展我第一个告诉你。",
+    "device": "ironic_praise"
+  },
+  {
+    "id": 12,
+    "scene": "办公室",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "这个方案周五能给客户看吧？他们已经催两轮了。"
+      },
+      {
+        "speaker": "我",
+        "text": "我尽量。"
+      }
+    ],
+    "target_phrase": "我尽量",
+    "literal": "I'll try my best.",
+    "intent": "「尽量」是不承诺的承诺，既没答应也没拒绝，先把周五这个时间点糊过去。真到交不出来时，这句话就是提前埋好的退路。",
+    "emotion": "压力、抵触、留后手",
+    "alternative": "周五只能出前半部分，完整的要到下周二。您看是先给客户看框架，还是整体往后挪？",
+    "device": "understatement"
+  },
+  {
+    "id": 13,
+    "scene": "情侣吵架后",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "你还在生气吗？我刚才说话是有点冲。"
+      },
+      {
+        "speaker": "我",
+        "text": "没事。"
+      }
+    ],
+    "target_phrase": "没事",
+    "literal": "It's fine.",
+    "intent": "嘴上说没事，实际在说「有事，而且你该知道是什么事」。等对方追问，追问不到点上，就是又一次失望。",
+    "emotion": "委屈、赌气、等被哄",
+    "alternative": "我还有点不舒服。你刚才那句话让我觉得你在嫌我烦。",
+    "device": "false_agreement"
+  },
+  {
+    "id": 14,
+    "scene": "家里客厅",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "拿着，这两千你收着，自己买点好吃的，别老吃外卖。"
+      },
+      {
+        "speaker": "我",
+        "text": "不用不用，我有，您留着自己花。"
+      }
+    ],
+    "target_phrase": "不用不用",
+    "literal": "No, no, I'm fine — keep it.",
+    "intent": "手上已经在推，心里知道推不过。这两声「不用」是必须走的礼数，走完才敢收；收得太快会显得理所当然。",
+    "emotion": "不好意思、心疼、亲近",
+    "alternative": "那我收下。不过您别老给我们攒着，该给自己买件衣服。",
+    "device": "over_politeness"
+  },
+  {
+    "id": 15,
+    "scene": "办公室工位",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "这个表你顺手帮我填一下吧，我这边真排不开，你比我熟。"
+      },
+      {
+        "speaker": "我",
+        "text": "好的呢。"
+      }
+    ],
+    "target_phrase": "好的呢",
+    "literal": "Sure thing~",
+    "intent": "三个字加一个「呢」，把不情愿裹成热情。对方听着舒服，但听得懂的人知道这话的意思是「怎么又是我」。",
+    "emotion": "不耐烦、阴阳、维持体面",
+    "alternative": "我可以填，但得排到下午。你手上那部分什么时候能给我？我们对一下时间。",
+    "device": "over_politeness"
+  },
+  {
+    "id": 16,
+    "scene": "导师办公室",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "这部分我按自己的思路改了一版，你看看，我觉得差不多了。"
+      },
+      {
+        "speaker": "我",
+        "text": "挺好的，就按您这版来吧。"
+      }
+    ],
+    "target_phrase": "挺好的",
+    "literal": "It's pretty good.",
+    "intent": "心里不认同，但已经改到第三轮，再讲一遍成本太高。「挺好的」是结束讨论的信号，不是评价。",
+    "emotion": "妥协、疲惫、放弃解释",
+    "alternative": "整体我同意。只有第二段的结论我想保留原来的说法，其余按您的改。",
+    "device": "ironic_praise"
+  },
+  {
+    "id": 17,
+    "scene": "亲戚饭桌",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "听说你换工作了？现在一个月能拿多少啊？"
+      },
+      {
+        "speaker": "我",
+        "text": "还行吧，够花。"
+      }
+    ],
+    "target_phrase": "还行吧",
+    "literal": "It's okay, I guess — enough to get by.",
+    "intent": "不是不肯说数字，是不想被拿去比较。「还行」既没撒谎，也没交出任何可以被比较的信息。",
+    "emotion": "戒备、礼貌、轻微不耐",
+    "alternative": "够日常开销，具体就不细说了。您最近身体怎么样？",
+    "device": "understatement"
+  },
+  {
+    "id": 18,
+    "scene": "家庭餐桌",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "你是哥哥，弟弟还小，这个玩具就让给他吧。"
+      },
+      {
+        "speaker": "我",
+        "text": "行吧。"
+      }
+    ],
+    "target_phrase": "行吧",
+    "literal": "Alright then.",
+    "intent": "在长辈面前不能顶嘴，这声「行吧」是咽下去的。但让出去的不是玩具，是「凭什么总是我让」这件事。",
+    "emotion": "不服、委屈、压着的火",
+    "alternative": "这次我让。不过妈，下次能不能也问问他愿不愿意让？",
+    "device": "false_agreement"
+  },
+  {
+    "id": 19,
+    "scene": "部门会议",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "这个方案先按我说的改，你的想法下次再说。"
+      },
+      {
+        "speaker": "我",
+        "text": "算了。"
+      }
+    ],
+    "target_phrase": "算了",
+    "literal": "Forget it.",
+    "intent": "不是放弃这个方案，是放弃在这间屋子里说服对方。「算了」把争辩的门关上，也把下次开口的意愿一起关小了。",
+    "emotion": "失望、心凉、闭嘴",
+    "alternative": "我尊重这个决定。不过我想把担心写进会议记录，出问题时好复盘。",
+    "device": "silence_ending"
+  },
+  {
+    "id": 20,
+    "scene": "微信家庭群",
+    "dialogue": [
+      {
+        "speaker": "对方",
+        "text": "公务员报名这周截止，你把名报了吧，稳定。"
+      },
+      {
+        "speaker": "我",
+        "text": "我再看看。"
+      }
+    ],
+    "target_phrase": "再看看",
+    "literal": "I'll take another look.",
+    "intent": "明确不想报，但知道直说会吵起来。「再看看」把冲突推到以后，父母那边会当成「还有戏」。",
+    "emotion": "为难、拖延、不想吵",
+    "alternative": "爸，我不想考公。我想先把现在这行做两年，做不出成绩我再考虑。",
+    "device": "understatement"
+  }
+]
