@@ -166,6 +166,7 @@ device：deflection=2、false_agreement=4、ironic_praise=2、over_politeness=2�
 | 项 | 值 |
 |---|---|
 | 分支 | `corpus-v2-add-10` |
+| Pull Request | [#1](https://github.com/ihavenotdeadyet/chinese_subtext/pull/1) |
 | 基线 | `main` 的 `f08f27f`（2026-11-05 初始化 V1，提交前已确认远程未被更新） |
 | 新增文件 | `corpus_v2.json`、`additions_v2.json`、`devices_v2.json`、`SCHEMA.md`、`MIGRATION-v2.md`、`build_v2.py`、`verify_v2.py`、`translations.json` |
 | 修改文件 | 仅 `README.md`（追加 V2 说明段） |
