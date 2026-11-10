@@ -74,25 +74,27 @@
 | 文件 | 说明 |
 |---|---|
 | `corpus_v1.json` | V1 十条原文，**只读**，V2 未改动它 |
-| `corpus_v2.json` | 20 条合并结果，由 `build_v2.py` 生成，**勿手改** |
-| `additions_v2.json` | 新增的 id 11–20，纯新增，本项目自撰 |
-| `devices_v2.json` | `id → device` 标注表与合法取值枚举 |
+| `corpus_v2.json` | 当前主数据，20 条，**唯一数据源**，直接维护 |
 | `translations.json` | 英 / 日讲解（`literal` / `intent` / `relation` / `emotion` / 两条替代表达），覆盖 20 条 |
 | `SCHEMA.md` | 标注规范：字段定义、`device` 七分类、写作口径 |
-| `MIGRATION-v2.md` | 变更清单：新增 / 修改 / 未动逐项说明，含回滚方式 |
-| `build_v2.py` | 合并脚本，内置「V1 原字段零改动」断言，不符直接退出 |
-| `verify_v2.py` | 只读自检 9 项，非零退出码，可挂在提交前 |
+| `verify_v2.py` | 只读自检 5 项，非零退出码 |
 
 ### 用法
 
 ```bash
-python build_v2.py     # 合并出 corpus_v2.json
-python verify_v2.py    # 自检（会顺带确认 corpus_v1.json 未被改动）
+python verify_v2.py    # 自检：v1 未被改动、结构合法、翻译齐全
 ```
+
+改 `corpus_v2.json` 前先看一眼 `SCHEMA.md`；改完跑自检，全绿再提交。
 
 ### 关于「参考开源项目」
 
 标注体系（`device` 七分类 + 与 Gricean 准则的对应）参考了上海交大开源语用数据集
 **SwordsmanImp**（`sjtu-compling/llm-pragmatics`，200 段《武林外传》）的方法论。
 但该仓库**没有 LICENSE，剧本本身另有版权**，所以**没有使用它的任何条目原文**，
-新增的十条全部为本项目自撰。详见 `MIGRATION-v2.md` 第一节。
+新增的十条全部为本项目自撰。分类定义见 `SCHEMA.md` 第二节。
+
+### 回滚
+
+`corpus_v1.json` 始终未被修改，恢复 V1 只需删除 `corpus_v2.json` / `translations.json` /
+`verify_v2.py`，保留 `corpus_v1.json` 与本文档即可。
