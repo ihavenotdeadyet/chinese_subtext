@@ -1,0 +1,631 @@
+{
+  "_note": "corpus_v1.json 只有中文 intent / emotion / alternative。本文件补齐 en / ja 两门教学语言，以及 relation、confidence、第二条替代表达。sync_corpus.py 会把它和 corpus_v1.json 合并成 echo-web/corpus.js。新增语料条目时，在这里按 id 补一块即可；缺块不会报错，页面回落显示中文。",
+
+  "scenes": {
+    "宿舍": { "en": "Dorm", "ja": "寮" },
+    "办公室": { "en": "Office", "ja": "オフィス" },
+    "情侣约会": { "en": "Date night", "ja": "デート" },
+    "办公室会议室": { "en": "Meeting room", "ja": "会議室" },
+    "情侣日常": { "en": "Couple at home", "ja": "二人の日常" },
+    "朋友群聊": { "en": "Group chat", "ja": "グループチャット" },
+    "微信社交": { "en": "WeChat catch-up", "ja": "WeChatでの誘い" },
+    "办公室工位": { "en": "At a colleague's desk", "ja": "職場の席で" },
+    "求职面试后": { "en": "After a job interview", "ja": "面接のあと" },
+    "商场门店": { "en": "In a shop", "ja": "店頭" },
+    "家庭电话": { "en": "Phone call home", "ja": "実家からの電話" },
+    "家里客厅": { "en": "Living room at home", "ja": "実家の居間" },
+    "情侣吵架后": { "en": "After a fight", "ja": "けんかのあと" },
+    "导师办公室": { "en": "Supervisor's office", "ja": "指導教員の部屋" },
+    "亲戚饭桌": { "en": "Relatives at dinner", "ja": "親戚の食卓" },
+    "家庭餐桌": { "en": "Dinner table at home", "ja": "実家の食卓" },
+    "部门会议": { "en": "Department meeting", "ja": "部門会議" },
+    "微信家庭群": { "en": "Family group chat", "ja": "家族グループ" }
+  },
+
+  "speakers": {
+    "对方": { "en": "Them", "ja": "相手" },
+    "我": { "en": "You", "ja": "あなた" }
+  },
+
+  "items": {
+    "1": {
+      "literal_zh": "我同意了",
+      "relation_zh": "勉强的应承，心里已经在记账。再来两次，下一个「行吧」会短得多。",
+      "confidence": 0.9,
+      "context": {
+        "en": "Going down for food? Grab me one too — I'm stuck in a game.",
+        "ja": "ご飯買いに行く？ついでに俺の分も買ってきて。ゲームで抜けられないんだ。"
+      },
+      "en": {
+        "literal": "Alright then.",
+        "intent": "I don't want to go, but I'm not going to fall out with my roommate over something this small. I say yes now and quietly keep score.",
+        "relation": "A favour accepted with a tally already running. Two more of these and the next 「行吧」 will be a lot shorter.",
+        "emotion": "Reluctant compliance",
+        "replies": [
+          { "zh": "行，不过下次换你带了。我这周作业堆得有点多。", "text": "Fine — but you're getting it next time. I'm buried in coursework this week." },
+          { "zh": "我今天真有点累，你自己点个外卖吧。", "text": "I'm genuinely wiped today — just order delivery for yourself." }
+        ]
+      },
+      "ja": {
+        "literal": "はい、わかった。",
+        "intent": "行きたくない。でも、こんなことでルームメイトと気まずくなるのは損。とりあえず引き受けて、心の中ではちゃんと数えておく。",
+        "relation": "しぶしぶ引き受けた、という記録がもう動き始めている。これが二度三度続けば、次の「行吧」はずっと短くなる。",
+        "emotion": "しぶしぶの承諾",
+        "replies": [
+          { "zh": "行，不过下次换你带了。我这周作业堆得有点多。", "text": "いいよ。でも次はそっちの番ね。今週は課題が溜まってる。" },
+          { "zh": "我今天真有点累，你自己点个外卖吧。", "text": "今日は本当に疲れてるから、デリバリー頼んで。" }
+        ]
+      }
+    },
+
+    "2": {
+      "literal_zh": "我接受了",
+      "relation_zh": "应承的同时，责任已经推回给提需求的人。上线真出问题，这句「行吧」就是凭证。",
+      "confidence": 0.88,
+      "context": {
+        "en": "Can you change this requirement before tomorrow's release? Just a colour tweak and one extra field — quick.",
+        "ja": "この要件、明日のリリース前に直して。色を変えて項目を一つ足すだけ、すぐでしょ。"
+      },
+      "en": {
+        "literal": "Alright.",
+        "intent": "Outwardly accepted. What is actually being said is: here is another last-minute addition. The yes also moves responsibility for the schedule onto whoever asked.",
+        "relation": "Compliance with the blame already assigned. If the release slips, this 「行吧」 is the receipt.",
+        "emotion": "Suppressed irritation",
+        "replies": [
+          { "zh": "可以改。不过加字段会动到接口，明天上线有风险，我们把优先级排一下？", "text": "I can change it. But a new field touches the API, so tomorrow's release is at risk. Shall we re-order the priorities?" },
+          { "zh": "今天改不完，最早明天下午给你。", "text": "I can't finish it today — tomorrow afternoon at the earliest." }
+        ]
+      },
+      "ja": {
+        "literal": "はい。",
+        "intent": "表面上は受け入れた。でも実質は「また急な追加か」という不満。同時に、スケジュールの責任を依頼した側に押し返している。",
+        "relation": "引き受けたふりをして、責任の所在はもう相手に移してある。リリースが遅れたら、この「行吧」がその証拠になる。",
+        "emotion": "抑えた不満",
+        "replies": [
+          { "zh": "可以改。不过加字段会动到接口，明天上线有风险，我们把优先级排一下？", "text": "直せます。ただ、項目を足すとAPIに触るので明日のリリースは危険です。優先順位を付け直しませんか。" },
+          { "zh": "今天改不完，最早明天下午给你。", "text": "今日中には終わりません。早くて明日の午後です。" }
+        ]
+      }
+    },
+
+    "3": {
+      "literal_zh": "不说了，算了",
+      "relation_zh": "这是一次试探，不是结束。正确做法是停下来问一句；轻轻放过，会被当成又一次“果然不记得”。",
+      "confidence": 0.92,
+      "context": {
+        "en": "What's the date today? …Oh. Isn't it the day we got together?",
+        "ja": "今日何日だっけ？……あ、付き合い始めた日だったかな。"
+      },
+      "en": {
+        "literal": "Forget it.",
+        "intent": "It isn't really “forget it”. It's disappointment that has piled up past the point of reminding, plus a wait to see whether the other person asks — and makes it up.",
+        "relation": "A test, not a dismissal. The right move is to stop and ask; letting it slide reads as one more confirmation.",
+        "emotion": "Hurt, testing you",
+        "replies": [
+          { "zh": "其实我挺在意的。你要是不记得，我会有点难过。", "text": "It actually matters to me. If you don't remember, it stings a little." },
+          { "zh": "我在意，但我也不想每次都当提醒你的那个人。", "text": "I care — I just don't want to be the one who reminds you every time." }
+        ]
+      },
+      "ja": {
+        "literal": "もういい。",
+        "intent": "本当に「もういい」わけではない。失望が溜まって、自分からはもう言いたくないだけ。相手が気づいて聞いてくるのを待っている。",
+        "relation": "試している。ここで流すと「やっぱり分かってくれない」という確認になってしまう。一度立ち止まって聞くのが正解。",
+        "emotion": "傷つき、試している",
+        "replies": [
+          { "zh": "其实我挺在意的。你要是不记得，我会有点难过。", "text": "実は気にしてる。覚えていてくれないと、ちょっと悲しい。" },
+          { "zh": "我在意，但我也不想每次都当提醒你的那个人。", "text": "気にしてるけど、毎回わたしが言う役は嫌なの。" }
+        ]
+      }
+    },
+
+    "4": {
+      "literal_zh": "不争了",
+      "relation_zh": "争执被推迟，而不是取消。这里的沉默，之后多半会以“不配合”的形式出现。",
+      "confidence": 0.85,
+      "context": {
+        "en": "I'll present this time — I know the data side well.",
+        "ja": "今回の発表は俺がやるよ。データは詳しいし。"
+      },
+      "en": {
+        "literal": "Never mind.",
+        "intent": "No argument now — but the credit being taken is noted. Next time the boundary gets drawn some other way.",
+        "relation": "A fight postponed, not cancelled. Silence here usually comes back later as a refusal to help.",
+        "emotion": "Bottled up, cold",
+        "replies": [
+          { "zh": "数据是我整理的，我想自己讲这部分。要不我们分工，你讲结论我讲数据？", "text": "I compiled the data, so I'd like to present that part. Let's split it — you take the conclusions, I take the numbers." },
+          { "zh": "那我把整理好的数据发你，讲的时候提一下来源。", "text": "Then I'll send you the cleaned dataset — just mention where it came from when you present." }
+        ]
+      },
+      "ja": {
+        "literal": "もういい。",
+        "intent": "その場では争わない。でも「手柄を取られた」ことはちゃんと覚えていて、次は別のやり方で線を引く。",
+        "relation": "喧嘩を中止しただけで、取り消したわけではない。ここの沈黙は、たいてい後で「協力しない」という形で返ってくる。",
+        "emotion": "飲み込んだ、冷めた怒り",
+        "replies": [
+          { "zh": "数据是我整理的，我想自己讲这部分。要不我们分工，你讲结论我讲数据？", "text": "データはわたしがまとめました。この部分は自分で説明したいです。結論はそちら、データはわたし、で分担しませんか。" },
+          { "zh": "那我把整理好的数据发你，讲的时候提一下来源。", "text": "では整理したデータを送ります。発表のときに出典だけ触れてください。" }
+        ]
+      }
+    },
+
+    "5": {
+      "literal_zh": "你决定，我都行",
+      "relation_zh": "这不是答案，是提问。给两个具体选项比开放式的“你想吃什么”有效得多。",
+      "confidence": 0.9,
+      "context": {
+        "en": "What do you want for dinner? You decide.",
+        "ja": "夜ご飯、何食べたい？決めて。"
+      },
+      "en": {
+        "literal": "Whatever.",
+        "intent": "There is a clear preference — it just won't be said first. The hope is that the other person remembers and guesses right. A wrong guess counts as not caring enough.",
+        "relation": "A question, not an answer. Two concrete options beat one open “what do you want”.",
+        "emotion": "Sulky, testing you",
+        "replies": [
+          { "zh": "我想吃上次那家火锅。你要是不想吃，我们换一个也行。", "text": "I want that hotpot place we went to. If you don't, we can switch." },
+          { "zh": "我有点想吃辣的，你定个地方？", "text": "I'm in the mood for something spicy — pick a place?" }
+        ]
+      },
+      "ja": {
+        "literal": "なんでもいい。",
+        "intent": "食べたいものは決まっている。でも先には言わない。覚えていて、当ててくれることを期待している。外したら「気持ちが足りない」という判定になる。",
+        "relation": "答えではなく、問いかけ。オープンな質問より、具体的な二択を出すほうが当たる。",
+        "emotion": "すねて、試している",
+        "replies": [
+          { "zh": "我想吃上次那家火锅。你要是不想吃，我们换一个也行。", "text": "この前の火鍋の店がいい。嫌なら別のでもいいよ。" },
+          { "zh": "我有点想吃辣的，你定个地方？", "text": "辛いものが食べたい気分。店は決めてくれる？" }
+        ]
+      }
+    },
+
+    "6": {
+      "literal_zh": "我无所谓",
+      "relation_zh": "拒绝带头。再问一次只会得到同一个词——不如直接给一个具体方案。",
+      "confidence": 0.87,
+      "context": {
+        "en": "Where shall we go this weekend? You suggest something — don't make it me again.",
+        "ja": "週末どこ行く？そっちが案を出して。また俺が決めるのはなしで。"
+      },
+      "en": {
+        "literal": "Anything works.",
+        "intent": "Tired of being the one who decides and then gets blamed. 「随便」 hands the choice and the responsibility back in one word.",
+        "relation": "A refusal to lead. Ask again and you'll get the same word — offer a concrete plan instead.",
+        "emotion": "Worn out, faintly defiant",
+        "replies": [
+          { "zh": "我这周有点累，不想跑远。要不就在家看片，你们定片子。", "text": "I'm tired this week and don't want to travel far. How about a film at home — you all pick." },
+          { "zh": "我来定也行，但定了就别挑。", "text": "I'll decide if you want, but no complaints once I do." }
+        ]
+      },
+      "ja": {
+        "literal": "どこでもいいよ。",
+        "intent": "決める側になって、あとで文句を言われる役はもう嫌。『随便』の一言で、選択権と責任をまとめて返している。",
+        "relation": "リードを拒否している。もう一度聞いても同じ言葉が返るだけ。具体的な案を出すほうが早い。",
+        "emotion": "疲れ、かすかな反抗",
+        "replies": [
+          { "zh": "我这周有点累，不想跑远。要不就在家看片，你们定片子。", "text": "今週は疲れてて遠出はしたくない。家で映画でもどう？作品はそっちで決めて。" },
+          { "zh": "我来定也行，但定了就别挑。", "text": "俺が決めてもいいけど、決めたら文句なしで。" }
+        ]
+      }
+    },
+
+    "7": {
+      "literal_zh": "换个时间再约",
+      "relation_zh": "门看着开着，其实没开。真有意的人，会先给出一个具体日子。",
+      "confidence": 0.9,
+      "context": {
+        "en": "Long time no see — shall we meet up this week? My treat.",
+        "ja": "久しぶり。今週どこかで会わない？ご飯おごるよ。"
+      },
+      "en": {
+        "literal": "I'm a bit busy this week — some other day.",
+        "intent": "A polite no, with no real plan to reschedule. 「改天」 is the social cushion that never names a date.",
+        "relation": "The door looks open but isn't. If they meant it, a day would already be on the table.",
+        "emotion": "Polite, distant",
+        "replies": [
+          { "zh": "谢谢你还想着我。最近确实排不开，等我这边松一点我主动约你。", "text": "Thanks for thinking of me. I really can't fit it in right now — I'll reach out myself when things ease up." },
+          { "zh": "这周末不行，下周三晚上可以吗？", "text": "This weekend doesn't work — how about next Wednesday evening?" }
+        ]
+      },
+      "ja": {
+        "literal": "今週はちょっと忙しいから、また今度ね。",
+        "intent": "丁寧な断りで、実際にまた誘う予定はない。『改天』は日付を決めないためのクッション。",
+        "relation": "ドアは開いているように見えて、開いていない。本気なら日付が先に出る。",
+        "emotion": "礼儀正しく、距離がある",
+        "replies": [
+          { "zh": "谢谢你还想着我。最近确实排不开，等我这边松一点我主动约你。", "text": "覚えていてくれてありがとう。今は本当に予定が詰まってる。落ち着いたらこちらから連絡するね。" },
+          { "zh": "这周末不行，下周三晚上可以吗？", "text": "今週末は無理。来週の水曜の夜なら大丈夫？" }
+        ]
+      }
+    },
+
+    "8": {
+      "literal_zh": "以后再说这事",
+      "relation_zh": "裹着“改天”的拒绝。再提一次，对方其实已经知道答案了。",
+      "confidence": 0.88,
+      "context": {
+        "en": "Could you lend me 20,000 first? I'll pay you back when I get paid next month.",
+        "ja": "2万円、先に貸してくれない？来月の給料で返すから。"
+      },
+      "en": {
+        "literal": "This… let's talk about it another day.",
+        "intent": "A refusal to lend, softened so the relationship survives the moment. The delay parks the topic; nothing will come of it.",
+        "relation": "A no wrapped in a postponement. If it comes up again, they already know the answer.",
+        "emotion": "Awkward, guarded",
+        "replies": [
+          { "zh": "这个数我确实拿不出来。你要不问问公司能不能预支，或者我帮你看看别的办法？", "text": "I genuinely can't put that together. Could you ask about an advance, or shall I help you look at other options?" },
+          { "zh": "我最近手头也紧，帮不上，抱歉。", "text": "Money's tight for me too right now — sorry, I can't help." }
+        ]
+      },
+      "ja": {
+        "literal": "これは……また今度にしましょう。",
+        "intent": "貸さない、という断り。でもその場で関係を壊したくないので、先延ばしにして話題を宙吊りにする。実際には続きは来ない。",
+        "relation": "先延ばしの形をした「ノー」。もう一度持ち出されたら、相手も答えは分かっている。",
+        "emotion": "気まずい、警戒",
+        "replies": [
+          { "zh": "这个数我确实拿不出来。你要不问问公司能不能预支，或者我帮你看看别的办法？", "text": "その額はさすがに用意できないです。前借りができるか聞いてみるか、他の手を一緒に考えましょうか。" },
+          { "zh": "我最近手头也紧，帮不上，抱歉。", "text": "こちらも今きつくて、力になれません。ごめんなさい。" }
+        ]
+      }
+    },
+
+    "9": {
+      "literal_zh": "我会继续关注",
+      "relation_zh": "双方用同一种模糊话术互留体面，谁也没承诺什么。",
+      "confidence": 0.82,
+      "context": {
+        "en": "Your background fits well. We'll do a fuller assessment and let you know the result.",
+        "ja": "経歴はよく合っています。もう少し総合的に評価して、結果はお知らせします。"
+      },
+      "en": {
+        "literal": "Okay, I'll take another look then.",
+        "intent": "Heard the backup-status loud and clear, and answers in the same vague register — while signalling there are other options in play.",
+        "relation": "Mirrored ambiguity. Both sides keep face; neither is committing.",
+        "emotion": "Disappointed, keeping composure",
+        "replies": [
+          { "zh": "明白。方便给个大概的时间节点吗？我这边也在推进其他机会，好做个安排。", "text": "Understood. Could you give a rough timeline? I'm moving on other options too, so it helps me plan." },
+          { "zh": "好的，方便的话给个大概时间，我这边也做个准备。", "text": "Sure — a rough date would help me plan on my side." }
+        ]
+      },
+      "ja": {
+        "literal": "わかりました、ではまた見てみます。",
+        "intent": "自分が「次点」だと理解した上で、同じ曖昧な言い方で返している。同時に、他にも選択肢があることを匂わせる。",
+        "relation": "曖昧さの返し合い。どちらも面子を保ち、どちらも約束していない。",
+        "emotion": "落胆、体裁は保つ",
+        "replies": [
+          { "zh": "明白。方便给个大概的时间节点吗？我这边也在推进其他机会，好做个安排。", "text": "承知しました。目安の時期を教えていただけますか。他も進めているので、予定を組みたいです。" },
+          { "zh": "好的，方便的话给个大概时间，我这边也做个准备。", "text": "わかりました。差し支えなければ目安だけ教えてください。こちらも準備します。" }
+        ]
+      }
+    },
+
+    "10": {
+      "literal_zh": "我还要再逛一逛",
+      "relation_zh": "礼貌的终止符。懂行的店员会就此收手。",
+      "confidence": 0.85,
+      "context": {
+        "en": "Today's the last day at this price — really good value. Shall I wrap it up for you?",
+        "ja": "この型、今日がセール最終日なんです。本当にお得ですよ。そのまま包みましょうか。"
+      },
+      "en": {
+        "literal": "I'll look around some more.",
+        "intent": "A clear no, aimed at ending the sales pitch rather than the politeness. 「再看看」 closes the conversation without costing anyone face.",
+        "relation": "Polite termination. A good salesperson reads it as final.",
+        "emotion": "Perfunctory, mildly pressured",
+        "replies": [
+          { "zh": "谢谢，我今天先不买。需要的话我自己再看，你不用招呼我。", "text": "Thanks, not today. I'll browse on my own — no need to look after me." },
+          { "zh": "我先转转，有需要再叫你。", "text": "I'll have a wander — I'll call you if I need anything." }
+        ]
+      },
+      "ja": {
+        "literal": "もう少し見てみます。",
+        "intent": "買わない、という意思ははっきりしている。ただ、これ以上売り込まれたくないので、角を立てずに会話を終わらせている。",
+        "relation": "丁寧な終了宣言。分かっている店員なら、ここで引く。",
+        "emotion": "適当、軽い圧を感じている",
+        "replies": [
+          { "zh": "谢谢，我今天先不买。需要的话我自己再看，你不用招呼我。", "text": "ありがとうございます。今日は買いません。必要なら自分で見ますので、お構いなく。" },
+          { "zh": "我先转转，有需要再叫你。", "text": "もう少し見て回ります。必要になったら声をかけます。" }
+        ]
+      }
+    },
+
+    "11": {
+      "literal_zh": "你高兴就行",
+      "relation_zh": "把话题关掉的同时留了一根刺：你在乎的是你的面子，不是我。母亲听得出来，但接不下去。",
+      "confidence": 0.86,
+      "context": {
+        "en": "Xiao Wang next door already has a kid in kindergarten. Don't you think it's time you started thinking about it?",
+        "ja": "隣の小王さん、子どもがもう幼稚園よ。そろそろ考えてもいいんじゃない？"
+      },
+      "en": {
+        "literal": "As long as you're happy.",
+        "intent": "This isn't a blessing — it's a door closing. You agree to nothing while making sure she hears the edge: what you care about is your own peace of mind, not mine.",
+        "relation": "Compliance that ends the call and starts a silence. She won't bring it up again soon, and she'll remember the tone.",
+        "emotion": "Weary, resigned, quietly sharp",
+        "replies": [
+          { "zh": "妈，我知道你着急。这事我心里有数，有进展我第一个告诉你。", "text": "Mum, I know you're worried. I'm on top of it — you'll be the first to hear when something changes." },
+          { "zh": "妈，我不是不想让你高兴。这事我想自己定，定了会告诉你。", "text": "Mum, it's not that I don't want you to be happy. I want to decide this myself — I'll tell you when I have." }
+        ]
+      },
+      "ja": {
+        "literal": "お母さんが幸せならそれでいいよ。",
+        "intent": "本心からの祝福ではない。話題を打ち切るための言葉で、しかも「あなたは自分のことしか見ていない」という棘が残る。",
+        "relation": "承諾の形をした終話。母は棘に気づくが、それ以上は続けられない。",
+        "emotion": "疲れ、我慢、棘のある従順",
+        "replies": [
+          { "zh": "妈，我知道你着急。这事我心里有数，有进展我第一个告诉你。", "text": "お母さん、焦ってるのは分かってる。自分でも考えてるし、進展があったら真っ先に話すよ。" },
+          { "zh": "妈，我不是不想让你高兴。这事我想自己定，定了会告诉你。", "text": "お母さん、喜ばせたくないわけじゃないよ。これは自分で決めたい。決まったら話すから。" }
+        ]
+      }
+    },
+
+    "12": {
+      "literal_zh": "我会尽最大努力",
+      "relation_zh": "不承诺的承诺。既没答应也没拒绝，把时间点糊过去；真交不出来时，这句就是提前埋的退路。",
+      "confidence": 0.88,
+      "context": {
+        "en": "Can this go to the client on Friday? They've chased twice already.",
+        "ja": "この案、金曜にクライアントに見せられる？もう二回催促されてる。"
+      },
+      "en": {
+        "literal": "I'll try my best.",
+        "intent": "「Try」 is a promise with an exit built in. It neither accepts nor refuses — it buys Friday. If Friday slips, this sentence was the insurance policy.",
+        "relation": "The manager hears a yes; the wording leaves you room. Both sides know the gap is there and neither names it.",
+        "emotion": "Pressured, resistant, hedging",
+        "replies": [
+          { "zh": "周五只能出前半部分，完整的要到下周二。您看是先给客户看框架，还是整体往后挪？", "text": "Friday can cover the first half only; the full version lands next Tuesday. Do you want to show them the framework, or move the whole thing back?" },
+          { "zh": "我按周五排，但只能保证主体部分。周四下班前我给你一个明确的完成度。", "text": "I'll plan for Friday, but I can only guarantee the main body. I'll give you an exact percentage by Thursday evening." }
+        ]
+      },
+      "ja": {
+        "literal": "できるだけやってみます。",
+        "intent": "「できるだけ」は逃げ道つきの約束。引き受けも断りもせず、金曜という期限をとりあえずやり過ごす。間に合わないとき、この一言が保険になる。",
+        "relation": "上司には「はい」と聞こえ、文面には余地が残る。双方その隙間を知っていて、名指しはしない。",
+        "emotion": "圧力、抵抗、保険をかける",
+        "replies": [
+          { "zh": "周五只能出前半部分，完整的要到下周二。您看是先给客户看框架，还是整体往后挪？", "text": "金曜は前半だけで、全部そろうのは来週火曜です。先に骨組みを見せるか、全体を後ろにずらすか、どちらにしますか。" },
+          { "zh": "我按周五排，但只能保证主体部分。周四下班前我给你一个明确的完成度。", "text": "金曜で組むけど、保証できるのは本体だけ。木曜の終業までに、どこまでできるかはっきり伝えるね。" }
+        ]
+      }
+    },
+
+    "13": {
+      "literal_zh": "没有问题",
+      "relation_zh": "「有事，而且你该知道是什么事」。等追问；追问不到点上，就是又一次失望。",
+      "confidence": 0.87,
+      "context": {
+        "en": "Are you still angry? I know I came on a bit strong just now.",
+        "ja": "まだ怒ってる？さっきはちょっと言いすぎたとは思ってる。"
+      },
+      "en": {
+        "literal": "It's fine.",
+        "intent": "Two characters that mean the opposite. It says: something is wrong, it is still wrong, and you're supposed to already know what. The test is whether he asks again — and how.",
+        "relation": "An invitation disguised as a dismissal. If he takes it literally, the distance grows by exactly the amount he failed to notice.",
+        "emotion": "Hurt, sulking, waiting to be comforted",
+        "replies": [
+          { "zh": "我还有点不舒服。你刚才那句话让我觉得你在嫌我烦。", "text": "I'm still a bit upset. What you said made me feel like I was being a nuisance." },
+          { "zh": "我说没事，是希望你多问一句。下次你直接抱一下，我可能就真没事了。", "text": "When I say it's fine, I'm hoping you'll ask one more time. Next time just hug me first — I probably will be fine." }
+        ]
+      },
+      "ja": {
+        "literal": "大丈夫。",
+        "intent": "「大丈夫」は逆の意味。何かが引っかかっていて、それはまだ解けていなくて、しかも分かっているのはそっちのはずだ、という合図。もう一度聞いてくるかどうかが試されている。",
+        "relation": "追い払う形をした誘い。字面通りに受け取られると、気づかなかった分だけ距離が広がる。",
+        "emotion": "傷つき、すねる、なだめてほしい",
+        "replies": [
+          { "zh": "我还有点不舒服。你刚才那句话让我觉得你在嫌我烦。", "text": "まだ少し引っかかってる。さっきの言い方だと、迷惑がられてるように感じた。" },
+          { "zh": "我说没事，是希望你多问一句。下次你直接抱一下，我可能就真没事了。", "text": "「大丈夫」って言うときは、もう一回聞いてほしいの。次は先に抱きしめて。たぶん本当に大丈夫になるから。" }
+        ]
+      }
+    },
+
+    "14": {
+      "literal_zh": "不需要，不需要",
+      "relation_zh": "手上已经在推，心里知道推不过。这两声「不用」是必须走的礼数，走完才敢收。",
+      "confidence": 0.84,
+      "context": {
+        "en": "Take this — two thousand yuan, keep it. Buy yourself something decent, stop living on takeout.",
+        "ja": "これ、二千元。持ってなさい。ちゃんとしたもの食べなさいよ、デリバリーばかりじゃだめ。"
+      },
+      "en": {
+        "literal": "No, no — I'm fine, you keep it.",
+        "intent": "The hands push back before the mind has decided. Two rounds of refusal is the toll that has to be paid; taking it instantly would look like it was expected all along.",
+        "relation": "A ritual, not a refusal. Both sides know the money changes hands — the script just has to be performed in the right order.",
+        "emotion": "Embarrassed, tender, reluctant to take",
+        "replies": [
+          { "zh": "那我收下。不过您别老给我们攒着，该给自己买件衣服。", "text": "Then I'll take it. But stop saving everything for us — buy yourself a proper coat." },
+          { "zh": "那我拿一半，剩下一半您自己留着。这钱我存着，不动。", "text": "I'll take half and you keep the other half. I'll put mine aside, not spend it." }
+        ]
+      },
+      "ja": {
+        "literal": "いらないいらない、大丈夫です。",
+        "intent": "頭より先に手が拒んでいる。二回断るのがこの場の作法で、それを踏まないと受け取るのが当然のことのように見えてしまう。",
+        "relation": "拒否ではなく儀式。お金が渡ることは双方分かっていて、順番どおりに演じる必要がある。",
+        "emotion": "照れ、いたわり、遠慮",
+        "replies": [
+          { "zh": "那我收下。不过您别老给我们攒着，该给自己买件衣服。", "text": "じゃあもらうね。でも私たちのために貯め込まないで、自分の服を買ってよ。" },
+          { "zh": "那我拿一半，剩下一半您自己留着。这钱我存着，不动。", "text": "半分もらうね、残りは取っておいて。もらった分は使わずに貯めておくから。" }
+        ]
+      }
+    },
+
+    "15": {
+      "literal_zh": "好的（带语气词）",
+      "relation_zh": "把不情愿裹成热情。听着舒服，但听得懂的人知道这话的意思是「怎么又是我」。",
+      "confidence": 0.83,
+      "context": {
+        "en": "Could you fill in this form for me? I really can't fit it in, and you know it better than I do.",
+        "ja": "この表、ついでに埋めてくれない？こっちは本当に手が回らないし、そっちのほうが詳しいでしょ。"
+      },
+      "en": {
+        "literal": "Sure thing~",
+        "intent": "The 「呢」 is the tell. Strip it and this is a flat yes; keep it and the sentence turns sweet in a way that isn't friendly. It means: of course it's me again.",
+        "relation": "Compliance with a blade wrapped in tissue. He hears a helpful colleague; a Chinese ear hears the sigh underneath.",
+        "emotion": "Impatient, passive-aggressive, keeping face",
+        "replies": [
+          { "zh": "我可以填，但得排到下午。你手上那部分什么时候能给我？我们对一下时间。", "text": "I can do it, but not before this afternoon. When can you get me your part? Let's line up the timing." },
+          { "zh": "行是可以，但我手上这份也急。你先跟组长说一声，让他排个先后。", "text": "I can, but mine's urgent too. Tell the team lead first and let him set the order." }
+        ]
+      },
+      "ja": {
+        "literal": "はい、いいですよ〜。",
+        "intent": "語尾の「呢」が本音。取ればただの承諾、付ければ親しげな皮をかぶった不満になる。つまり「また私かよ」ということ。",
+        "relation": "包み紙に包んだ刃物のような承諾。相手には親切な同僚に聞こえ、中国語の耳にはため息が聞こえる。",
+        "emotion": "いらだち、嫌味、体裁を保つ",
+        "replies": [
+          { "zh": "我可以填，但得排到下午。你手上那部分什么时候能给我？我们对一下时间。", "text": "埋められないことはないけど、午後以降になる。そっちの分はいつもらえる？時間を合わせよう。" },
+          { "zh": "行是可以，但我手上这份也急。你先跟组长说一声，让他排个先后。", "text": "やれなくはないけど、こっちのも急ぎ。先にリーダーに言って、順番を決めてもらって。" }
+        ]
+      }
+    },
+
+    "16": {
+      "literal_zh": "很不错",
+      "relation_zh": "改到第三轮，再讲一遍成本太高。「挺好的」是结束讨论的信号，不是评价。",
+      "confidence": 0.85,
+      "context": {
+        "en": "I reworked this section my own way — have a look, I think it's about there.",
+        "ja": "この部分、自分の考えで書き直してみた。見てくれる？もうこれで十分だと思うんだ。"
+      },
+      "en": {
+        "literal": "It's pretty good.",
+        "intent": "Disagreement, retired. Third round on the same paragraph; explaining it again now costs more than losing the point. 「挺好的」 is not an evaluation — it's a full stop.",
+        "relation": "The supervisor hears approval. What's actually being said is: your version wins, and I'm done spending on this.",
+        "emotion": "Compromised, tired, giving up on explaining",
+        "replies": [
+          { "zh": "整体我同意。只有第二段的结论我想保留原来的说法，其余按您的改。", "text": "I agree with it overall. Only the conclusion in section two — I'd like to keep my original wording. The rest goes your way." },
+          { "zh": "我想留一个问题在这儿：第二段的结论我还是偏向原来的写法。您要是同意，我按两版拼一稿。", "text": "One thing I want to put on record: I still prefer the original conclusion in section two. If you're open to it, I'll merge both versions." }
+        ]
+      },
+      "ja": {
+        "literal": "とてもいいと思います。",
+        "intent": "納得はしていない。でも同じ段落で三回目、もう一度説明するコストが、勝ちを譲るコストより高くなった。「挺好的」は評価ではなく終止符。",
+        "relation": "指導教員には賛成と聞こえる。実際に言っているのは「あなたの案でいい、私はこれ以上ここに使わない」。",
+        "emotion": "妥協、疲労、説明を諦める",
+        "replies": [
+          { "zh": "整体我同意。只有第二段的结论我想保留原来的说法，其余按您的改。", "text": "全体は同意します。ただ第二段落の結論だけ、元の言い方を残したい。ほかはご案のとおりに直します。" },
+          { "zh": "我想留一个问题在这儿：第二段的结论我还是偏向原来的写法。您要是同意，我按两版拼一稿。", "text": "一つだけ記録に残したいです。第二段落の結論は、やはり元の書き方に戻したい。よければ二案を統合して一稿にします。" }
+        ]
+      }
+    },
+
+    "17": {
+      "literal_zh": "还可以吧",
+      "relation_zh": "不是不肯说数字，是不想被拿去比较。「还行」既没撒谎，也没交出任何可以被比较的信息。",
+      "confidence": 0.86,
+      "context": {
+        "en": "I heard you changed jobs? How much are you pulling in now?",
+        "ja": "転職したんだって？今いくらくらいもらってるの？"
+      },
+      "en": {
+        "literal": "It's okay, I guess — enough to get by.",
+        "intent": "The number stays in your pocket. 「还行」 is true and empty at the same time: no lie to catch you on, no figure to put next to the neighbour's kid's.",
+        "relation": "A wall built out of politeness. She can't push without looking nosy, and the subject has already been changed.",
+        "emotion": "Guarded, polite, mildly annoyed",
+        "replies": [
+          { "zh": "够日常开销，具体就不细说了。您最近身体怎么样？", "text": "Covers the monthly bills — I won't go into figures. How's your health been lately?" },
+          { "zh": "够自己花，不跟人比。表姐那边最近怎么样？", "text": "Enough for me, and I'm not comparing. How's my cousin doing these days?" }
+        ]
+      },
+      "ja": {
+        "literal": "まあまあかな、暮らせる程度。",
+        "intent": "数字は出さない。出せば必ず比較されるから。「还行」は嘘をつかず、かつ比較できる情報を一ミリも渡していない。",
+        "relation": "礼儀で作った壁。詮索好きに見えない限り、それ以上は踏み込めない。しかも話題はもう移してある。",
+        "emotion": "警戒、礼儀、軽いいらだち",
+        "replies": [
+          { "zh": "够日常开销，具体就不细说了。您最近身体怎么样？", "text": "生活費は足りてます。細かい数字は控えますね。最近お体どうですか。" },
+          { "zh": "够自己花，不跟人比。表姐那边最近怎么样？", "text": "自分の分は足りてるし、人と比べてないよ。いとこは最近どう？" }
+        ]
+      }
+    },
+
+    "18": {
+      "literal_zh": "好吧",
+      "relation_zh": "在长辈面前不能顶嘴，这声「行吧」是咽下去的。让出去的不是玩具，是「凭什么总是我让」这件事。",
+      "confidence": 0.88,
+      "context": {
+        "en": "You're the older one and he's still little — just let him have this toy.",
+        "ja": "お兄ちゃんでしょ、弟はまだ小さいんだから、このおもちゃは譲ってあげなさい。"
+      },
+      "en": {
+        "literal": "Alright then.",
+        "intent": "You can't talk back in front of the elders, so this one goes down hard. What's being handed over isn't a toy — it's the question of why it is always you.",
+        "relation": "An order obeyed and recorded. The score is kept silently, and it does not reset.",
+        "emotion": "Defiant, wronged, anger under pressure",
+        "replies": [
+          { "zh": "这次我让。不过妈，下次能不能也问问他愿不愿意让？", "text": "I'll let him have it this time. But Mum — next time, could you ask him whether he's willing to give something up too?" },
+          { "zh": "这次我给他。不过下次能不能先问问我？我也想被让一次。", "text": "I'll give it to him this time. But next time, could you ask me first? I'd like to be the one who gets let off." }
+        ]
+      },
+      "ja": {
+        "literal": "はい、わかりました。",
+        "intent": "年長者の前では口答えできない。だから飲み込むしかない。譲っているのはおもちゃではなく、「なぜいつも自分なのか」という問い。",
+        "relation": "従った、という記録。点数は黙ってつけられ、リセットはされない。",
+        "emotion": "不服、理不尽、抑えた怒り",
+        "replies": [
+          { "zh": "这次我让。不过妈，下次能不能也问问他愿不愿意让？", "text": "今回は譲るよ。でもお母さん、次はあの子にも譲る気があるか聞いてくれない？" },
+          { "zh": "这次我给他。不过下次能不能先问问我？我也想被让一次。", "text": "今回はあげる。でも次は先に聞いてくれない？こっちも譲られてみたい。" }
+        ]
+      }
+    },
+
+    "19": {
+      "literal_zh": "不再计较了",
+      "relation_zh": "放弃的不是方案，是在这间屋子里说服对方。「算了」把争辩的门关上，也把下次开口的意愿关小。",
+      "confidence": 0.89,
+      "context": {
+        "en": "Let's change this the way I said for now — your idea can wait till next time.",
+        "ja": "この案はとりあえず俺の言うとおりに直して。君の案はまた今度でいい。"
+      },
+      "en": {
+        "literal": "Forget it.",
+        "intent": "It isn't the proposal being dropped — it's the attempt to convince anyone in this room. The two characters shut the argument down and quietly shrink the willingness to speak up next time.",
+        "relation": "Compliance that costs the team something invisible. The next meeting will have one fewer voice in it.",
+        "emotion": "Disappointed, chilled, shutting down",
+        "replies": [
+          { "zh": "我尊重这个决定。不过我想把担心写进会议记录，出问题时好复盘。", "text": "I respect the call. But I'd like my concern written into the minutes, so we can review it if something goes wrong." },
+          { "zh": "行，我改。但我保留意见，邮件里我会写清楚风险点。", "text": "Fine, I'll change it. But I'm registering a dissent — I'll spell out the risks in an email." }
+        ]
+      },
+      "ja": {
+        "literal": "もういいです。",
+        "intent": "投げたのは企画ではなく、この部屋で誰かを説得する試み。二文字で議論の扉を閉め、同時に「次に口を開く意欲」も少し削っている。",
+        "relation": "従順に見えて、チームは静かに損をしている。次の会議では、声が一つ減る。",
+        "emotion": "失望、冷め、口を閉じる",
+        "replies": [
+          { "zh": "我尊重这个决定。不过我想把担心写进会议记录，出问题时好复盘。", "text": "決定には従います。ただ、懸念は議事録に残したい。問題が起きたときに検証できるように。" },
+          { "zh": "行，我改。但我保留意见，邮件里我会写清楚风险点。", "text": "わかりました、直します。ただ、意見は保留します。リスクはメールで明確に書いておきます。" }
+        ]
+      }
+    },
+
+    "20": {
+      "literal_zh": "我再看一看",
+      "relation_zh": "明确不想报，但知道直说会吵起来。「再看看」把冲突推到以后，父母那边会当成「还有戏」。",
+      "confidence": 0.87,
+      "context": {
+        "en": "The civil service registration closes this week. Just sign up — it's stable.",
+        "ja": "公務員の願書、今週締め切りだよ。出しなさい、安定してるから。"
+      },
+      "en": {
+        "literal": "I'll take another look.",
+        "intent": "You're not going to apply, and you know saying so starts a fight. 「再看看」 pushes the conflict into the future, and gets read on the other end as 'there's still a chance'.",
+        "relation": "A delay both sides read differently. They hear hope; you're buying weeks.",
+        "emotion": "Cornered, stalling, avoiding a fight",
+        "replies": [
+          { "zh": "爸，我不想考公。我想先把现在这行做两年，做不出成绩我再考虑。", "text": "Dad, I don't want to sit the civil service exam. Give me two years in what I'm doing now — if it goes nowhere, I'll reconsider." },
+          { "zh": "爸，这事我想清楚再答复你。给我到月底，行吗？", "text": "Dad, let me think it through properly and then answer you. Give me till the end of the month?" }
+        ]
+      },
+      "ja": {
+        "literal": "もう少し見てみる。",
+        "intent": "受ける気はない。でもはっきり言えば喧嘩になる。「再看看」は衝突を未来に押しやり、相手には「まだ可能性がある」と読まれる。",
+        "relation": "先延ばしの読み違い。向こうは希望を聞き、こちらは数週間を買っている。",
+        "emotion": "追い詰められ、先延ばし、喧嘩を避ける",
+        "replies": [
+          { "zh": "爸，我不想考公。我想先把现在这行做两年，做不出成绩我再考虑。", "text": "お父さん、公務員は受けたくない。今の仕事を二年やってみたい。結果が出なければ考え直す。" },
+          { "zh": "爸，这事我想清楚再答复你。给我到月底，行吗？", "text": "お父さん、ちゃんと考えてから返事する。今月末まで待ってくれる？" }
+        ]
+      }
+    }
+  }
+}
