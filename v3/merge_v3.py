@@ -187,7 +187,9 @@ def main():
         r["id"] = i
 
     out = os.path.join(ROOT, "corpus_v3.json")
-    with open(out, "w", encoding="utf-8") as f:
+    # newline="\n" 固定 LF：Windows 上默认会写成 CRLF，和仓库其余文件不一致，
+    # 会让以后每改一行都在 diff 里显示成整文件改动。
+    with open(out, "w", encoding="utf-8", newline="\n") as f:
         json.dump(kept, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
