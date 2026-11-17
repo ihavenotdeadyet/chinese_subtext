@@ -8,7 +8,7 @@ BUPT_API_KEY = os.getenv("BUPT_API_KEY")
 BUPT_BASE_URL = os.getenv("BUPT_BASE_URL")
 CHAT_MODEL = os.getenv("BUPT_CHAT_MODEL")
 
-CARD_FILE = "pragmatic_cards.json"
+CARD_FILE = "chinese_subtext_corpus.json"
 
 def get_relevance_score(query: str, card: dict) -> int:
     # 适配你现在的json字段
