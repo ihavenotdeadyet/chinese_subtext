@@ -1,0 +1,1902 @@
+[
+    {
+        "id": 1,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "等下要不要一起去食堂？"
+            },
+            {
+                "speaker": "我",
+                "text": "我再看看吧"
+            }
+        ],
+        "target_phrase": "我再看看吧",
+        "literal": "Let me think it over again.",
+        "intent": "不想去但又不好意思直接说不去，用含糊话术留面子和退路",
+        "emotion": "犹豫、客气、委婉",
+        "alternative": "这次我就不去啦，你们先去。"
+    },
+    {
+        "id": 2,
+        "scene": "小组作业",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "这个方案你觉得行不行？"
+            },
+            {
+                "speaker": "我",
+                "text": "还行吧"
+            }
+        ],
+        "target_phrase": "还行吧",
+        "literal": "It's okay, I guess.",
+        "intent": "评价偏中性、不是特别满意，但不想直接否定对方，避免伤和气",
+        "emotion": "勉强、平淡、有所保留",
+        "alternative": "有一些地方还可以再优化一下。"
+    },
+    {
+        "id": 3,
+        "scene": "课堂",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "等下借我抄一下笔记可以吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我笔记写得比较乱"
+            }
+        ],
+        "target_phrase": "我笔记写得比较乱",
+        "literal": "My notes are a bit messy.",
+        "intent": "用笔记潦草作理由婉拒借阅，避免显得自私、伤对方脸面",
+        "emotion": "委婉、歉疚、推脱",
+        "alternative": "不好意思，我习惯自己整理，不太方便外借。"
+    },
+    {
+        "id": 4,
+        "scene": "食堂",
+        "dialogue": [
+            {
+                "speaker": "朋友",
+                "text": "要不要多点一份菜？"
+            },
+            {
+                "speaker": "我",
+                "text": "不用啦，够吃了。"
+            }
+        ],
+        "target_phrase": "不用啦，够吃了",
+        "literal": "No need, I've had enough.",
+        "intent": "礼貌拒绝加菜，表达自己需求已满足，不需要额外",
+        "emotion": "客气、满足、从容",
+        "alternative": "谢谢你，我饭量不大，这些刚好。"
+    },
+    {
+        "id": 5,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "能不能小声一点，我要睡觉了。"
+            },
+            {
+                "speaker": "我",
+                "text": "啊，不好意思！"
+            }
+        ],
+        "target_phrase": "啊，不好意思！",
+        "literal": "Ah, I'm sorry!",
+        "intent": "被提醒后立刻道歉，意识到自己打扰了别人，急于挽回",
+        "emotion": "抱歉、慌忙、愧疚",
+        "alternative": "抱歉抱歉，我马上安静。"
+    },
+    {
+        "id": 6,
+        "scene": "社团面试",
+        "dialogue": [
+            {
+                "speaker": "面试官",
+                "text": "你还有什么想问我们的吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "暂时没有了，谢谢学长学姐。"
+            }
+        ],
+        "target_phrase": "暂时没有了，谢谢学长学姐",
+        "literal": "Nothing for now, thanks seniors.",
+        "intent": "礼貌地为提问环节收尾，表达没有别的问题并致谢",
+        "emotion": "礼貌、正式、感激",
+        "alternative": "我没有别的问题啦，辛苦你们。"
+    },
+    {
+        "id": 7,
+        "scene": "快递站",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "顺路帮我拿个快递可以吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我等下要去教学楼，不太顺路。"
+            }
+        ],
+        "target_phrase": "不太顺路",
+        "literal": "(It's) not really on the way.",
+        "intent": "给客观路线理由婉拒帮忙，避免让对方觉得是不愿意帮",
+        "emotion": "客观、轻微回避、顾着体面",
+        "alternative": "不好意思，路线不一样，帮不到你。"
+    },
+    {
+        "id": 8,
+        "scene": "自习室",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "这个题你会吗，教教我？"
+            },
+            {
+                "speaker": "我",
+                "text": "我也不太确定，怕讲错。"
+            }
+        ],
+        "target_phrase": "我也不太确定，怕讲错",
+        "literal": "I'm not sure either; afraid to mislead.",
+        "intent": "以自己没有把握为由婉拒讲解，避免讲错误导对方",
+        "emotion": "不自信、谨慎、推辞",
+        "alternative": "我还没弄懂这道题，你问问其他人吧。"
+    },
+    {
+        "id": 9,
+        "scene": "饭局",
+        "dialogue": [
+            {
+                "speaker": "朋友",
+                "text": "再来一杯奶茶？"
+            },
+            {
+                "speaker": "我",
+                "text": "不了不了，我喝不下了。"
+            }
+        ],
+        "target_phrase": "不了不了，我喝不下了",
+        "literal": "No no, I can't drink any more.",
+        "intent": "熟人之间轻松口语化的拒绝，听着不伤人",
+        "emotion": "轻松、玩笑、饱足",
+        "alternative": "谢谢，我今天不想再喝啦。"
+    },
+    {
+        "id": 10,
+        "scene": "班级群线下沟通",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "这次活动你要不要报名？"
+            },
+            {
+                "speaker": "我",
+                "text": "我再考虑考虑。"
+            }
+        ],
+        "target_phrase": "我再考虑考虑",
+        "literal": "Let me consider it a bit more.",
+        "intent": "不直接答应也不拒绝，给自己留思考时间，是客气的缓冲",
+        "emotion": "谨慎、保留、试探",
+        "alternative": "我暂时还决定不了，晚点告诉你。"
+    },
+    {
+        "id": 11,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "能不能借你的充电器用一下？"
+            },
+            {
+                "speaker": "我",
+                "text": "等我用完给你哈。"
+            }
+        ],
+        "target_phrase": "等我用完给你哈",
+        "literal": "Wait until I've used it up first.",
+        "intent": "答应借出但说明自己正在用，先延后交付",
+        "emotion": "爽快、配合、略抱歉",
+        "alternative": "我现在在用，等下给你。"
+    },
+    {
+        "id": 12,
+        "scene": "小组讨论",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "我们明天晚上八点集合行不行？"
+            },
+            {
+                "speaker": "我",
+                "text": "我明天晚上有事哎。"
+            }
+        ],
+        "target_phrase": "我明天晚上有事哎",
+        "literal": "I have something tomorrow evening.",
+        "intent": "说明时间冲突，委婉请对方调整时间",
+        "emotion": "婉转、善意、略带歉意",
+        "alternative": "这个时间我安排不开，我们换个时间？"
+    },
+    {
+        "id": 13,
+        "scene": "路上偶遇",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "要不要一起走？"
+            },
+            {
+                "speaker": "我",
+                "text": "我要绕去超市一趟。"
+            }
+        ],
+        "target_phrase": "我要绕去超市一趟",
+        "literal": "I need to detour to the supermarket.",
+        "intent": "说明路线不同，委婉谢绝同行",
+        "emotion": "平淡、自然、留余地",
+        "alternative": "我要去别的地方，咱们先走散啦。"
+    },
+    {
+        "id": 14,
+        "scene": "请教问题",
+        "dialogue": [
+            {
+                "speaker": "我",
+                "text": "这个地方我有点没看懂"
+            },
+            {
+                "speaker": "对方",
+                "text": "我简单跟你说一下哈"
+            }
+        ],
+        "target_phrase": "我有点没看懂",
+        "literal": "I didn't quite understand this part.",
+        "intent": "礼貌表达自己存在困惑，请求对方讲解",
+        "emotion": "困惑、虚心、求助",
+        "alternative": "这里我不太明白，能不能麻烦你讲一下？"
+    },
+    {
+        "id": 15,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "我新买的零食，你尝尝？"
+            },
+            {
+                "speaker": "我",
+                "text": "那我就不客气啦！"
+            }
+        ],
+        "target_phrase": "那我就不客气啦",
+        "literal": "Then I won't stand on ceremony.",
+        "intent": "爽快接受馈赠，语言透着亲近与熟络",
+        "emotion": "开心、亲近、随意",
+        "alternative": "好呀，谢谢你！"
+    },
+    {
+        "id": 16,
+        "scene": "自习室",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "能不能帮我占一个位置？"
+            },
+            {
+                "speaker": "我",
+                "text": "这边好像不让占座。"
+            }
+        ],
+        "target_phrase": "这边好像不让占座",
+        "literal": "It seems seating isn't allowed to be saved here.",
+        "intent": "用规则作理由婉拒帮忙占座，客观不伤人",
+        "emotion": "客观、无奈、委婉",
+        "alternative": "不好意思，自习室规定不能占座。"
+    },
+    {
+        "id": 17,
+        "scene": "组队竞赛",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "要不要和我们组队参赛？"
+            },
+            {
+                "speaker": "我",
+                "text": "我水平不太够，怕拖后腿。"
+            }
+        ],
+        "target_phrase": "我水平不太够，怕拖后腿",
+        "literal": "I'm not good enough, afraid to hold you back.",
+        "intent": "以自谦为由婉拒组队，避免直接拒绝伤人",
+        "emotion": "谦虚、没把握、回避责任",
+        "alternative": "谢谢邀请，我这次就不参加啦。"
+    },
+    {
+        "id": 18,
+        "scene": "下课",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "老师刚才布置的作业是什么？"
+            },
+            {
+                "speaker": "我",
+                "text": "我没听清，你问问别人？"
+            }
+        ],
+        "target_phrase": "我没听清，你问问别人？",
+        "literal": "I didn't catch it; why not ask someone else?",
+        "intent": "如实说明自己没听到、给不了信息，顺手指条路",
+        "emotion": "平静、如实、略带推脱",
+        "alternative": "刚刚我走神了，不清楚作业内容。"
+    },
+    {
+        "id": 19,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "等下要不要一起跑步？"
+            },
+            {
+                "speaker": "我",
+                "text": "今天有点累，不想动了。"
+            }
+        ],
+        "target_phrase": "今天有点累，不想动了",
+        "literal": "A bit tired today; don't feel like moving.",
+        "intent": "说明自身状态，婉拒运动邀约",
+        "emotion": "疲惫、慵懒、婉转",
+        "alternative": "我今天状态不好，下次再一起吧。"
+    },
+    {
+        "id": 20,
+        "scene": "打印店",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "能不能帮我顺便打印一份？"
+            },
+            {
+                "speaker": "我",
+                "text": "我打的东西比较多，怕弄混。"
+            }
+        ],
+        "target_phrase": "怕弄混",
+        "literal": "Afraid they'd get mixed up.",
+        "intent": "以怕混淆为由婉拒代打印，给出合理顾虑",
+        "emotion": "委婉、顾虑、顾体面",
+        "alternative": "不太方便，你自己过来打会更好。"
+    },
+    {
+        "id": 21,
+        "scene": "班会",
+        "dialogue": [
+            {
+                "speaker": "班长",
+                "text": "谁愿意主动承担这个任务？"
+            },
+            {
+                "speaker": "我",
+                "text": "我可以试试。"
+            }
+        ],
+        "target_phrase": "我可以试试",
+        "literal": "I can give it a try.",
+        "intent": "主动承接任务但语气谦虚、不打包票",
+        "emotion": "主动、谦虚、谨慎",
+        "alternative": "这个任务我愿意来做。"
+    },
+    {
+        "id": 22,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "你这个耳机音质好棒！"
+            },
+            {
+                "speaker": "我",
+                "text": "还好啦，一般般。"
+            }
+        ],
+        "target_phrase": "还好啦，一般般",
+        "literal": "It's fine, just so-so.",
+        "intent": "收到夸奖后谦虚压低自己，是中式客套",
+        "emotion": "谦虚、害羞、礼貌",
+        "alternative": "谢谢你喜欢，我觉得还不错。"
+    },
+    {
+        "id": 23,
+        "scene": "小组作业",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "这个部分你来负责好不好？"
+            },
+            {
+                "speaker": "我",
+                "text": "我这块不太熟悉。"
+            }
+        ],
+        "target_phrase": "我这块不太熟悉",
+        "literal": "I'm not that familiar with this part.",
+        "intent": "以能力短板为由委婉推脱被分配的任务",
+        "emotion": "为难、委婉、回避",
+        "alternative": "这个方向我不太擅长，换个人会不会更好？"
+    },
+    {
+        "id": 24,
+        "scene": "路上",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "麻烦让一下，谢谢。"
+            },
+            {
+                "speaker": "我",
+                "text": "哦哦，不好意思。"
+            }
+        ],
+        "target_phrase": "哦哦，不好意思",
+        "literal": "Oh, I'm sorry.",
+        "intent": "意识到挡路后立刻道歉并避让",
+        "emotion": "抱歉、慌忙、礼貌",
+        "alternative": "抱歉，我没注意。"
+    },
+    {
+        "id": 25,
+        "scene": "约学习",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "明天早上七点去自习吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "太早了，我起不来。"
+            }
+        ],
+        "target_phrase": "太早了，我起不来",
+        "literal": "Too early; I won't be able to get up.",
+        "intent": "直白而温和地拒绝早起的邀约",
+        "emotion": "直率、轻松、带点撒娇",
+        "alternative": "七点对我来说有点困难，我们晚点？"
+    },
+    {
+        "id": 26,
+        "scene": "借伞",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "能不能借我一把伞？"
+            },
+            {
+                "speaker": "我",
+                "text": "我等下也要用。"
+            }
+        ],
+        "target_phrase": "我等下也要用",
+        "literal": "I'll need it myself in a moment.",
+        "intent": "说明自己也有使用需求，实在无法出借",
+        "emotion": "客观、抱歉、委婉",
+        "alternative": "抱歉，我待会儿出门需要。"
+    },
+    {
+        "id": 27,
+        "scene": "收到帮助",
+        "dialogue": [
+            {
+                "speaker": "对方",
+                "text": "搞定了，给你。"
+            },
+            {
+                "speaker": "我",
+                "text": "太感谢你了！"
+            }
+        ],
+        "target_phrase": "太感谢你了",
+        "literal": "Thank you so much!",
+        "intent": "对别人的帮助表达强烈谢意",
+        "emotion": "感激、真诚、热情",
+        "alternative": "辛苦你啦，真的帮大忙了。"
+    },
+    {
+        "id": 28,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "周末一起出去玩吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "周末我要赶作业。"
+            }
+        ],
+        "target_phrase": "周末我要赶作业",
+        "literal": "I need to catch up on homework this weekend.",
+        "intent": "以学业任务为由婉拒外出邀约",
+        "emotion": "无奈、歉意、解释",
+        "alternative": "周末作业比较多，这次去不了。"
+    },
+    {
+        "id": 29,
+        "scene": "课堂提问",
+        "dialogue": [
+            {
+                "speaker": "老师",
+                "text": "这个问题有没有同学愿意回答？"
+            },
+            {
+                "speaker": "我",
+                "text": "老师，我有想法。"
+            }
+        ],
+        "target_phrase": "我有想法",
+        "literal": "I have an idea.",
+        "intent": "主动举手示意要发言，表达有想法",
+        "emotion": "积极、自信、期盼",
+        "alternative": "老师，我想说一说我的看法。"
+    },
+    {
+        "id": 30,
+        "scene": "社团招新",
+        "dialogue": [
+            {
+                "speaker": "学长",
+                "text": "要不要加入我们社团？"
+            },
+            {
+                "speaker": "我",
+                "text": "我先了解一下看看。"
+            }
+        ],
+        "target_phrase": "我先了解一下看看",
+        "literal": "Let me learn a bit more first.",
+        "intent": "不立刻答应，先观望，客气地不把话说死",
+        "emotion": "谨慎、保留、观察",
+        "alternative": "我先听听介绍，之后再决定。"
+    },
+    {
+        "id": 31,
+        "scene": "外卖",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "要不要一起拼单？"
+            },
+            {
+                "speaker": "我",
+                "text": "我已经点好了。"
+            }
+        ],
+        "target_phrase": "我已经点好了",
+        "literal": "I've already ordered.",
+        "intent": "客观说明已经下单，婉拒拼单",
+        "emotion": "平淡、歉然、礼貌",
+        "alternative": "谢谢你，我刚刚下单了。"
+    },
+    {
+        "id": 32,
+        "scene": "小组讨论",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "你觉得这个想法怎么样？"
+            },
+            {
+                "speaker": "我",
+                "text": "有道理，但是还有一点小问题。"
+            }
+        ],
+        "target_phrase": "有道理，但是还有一点小问题",
+        "literal": "Makes sense, but there's a small issue.",
+        "intent": "先肯定对方再委婉提不同意见，避免得罪人",
+        "emotion": "客气、审慎、委婉",
+        "alternative": "这个思路不错，不过有一处可以调整。"
+    },
+    {
+        "id": 33,
+        "scene": "图书馆",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "手机能不能调小声一点？"
+            },
+            {
+                "speaker": "我",
+                "text": "啊，抱歉抱歉！"
+            }
+        ],
+        "target_phrase": "啊，抱歉抱歉",
+        "literal": "Ah, sorry, sorry!",
+        "intent": "连续道歉表达歉意，适合打扰到别人的场景",
+        "emotion": "愧疚、慌忙、歉意",
+        "alternative": "不好意思，我马上静音。"
+    },
+    {
+        "id": 34,
+        "scene": "约饭",
+        "dialogue": [
+            {
+                "speaker": "朋友",
+                "text": "晚上去吃火锅吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "火锅我最近不太想吃。"
+            }
+        ],
+        "target_phrase": "我最近不太想吃",
+        "literal": "I don't really feel like it lately.",
+        "intent": "以口味偏好温和拒绝邀约，语气不勉强",
+        "emotion": "温和、任性、客气",
+        "alternative": "谢谢，我暂时不想吃火锅。"
+    },
+    {
+        "id": 35,
+        "scene": "借电脑",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "能不能借你的电脑用十分钟？"
+            },
+            {
+                "speaker": "我",
+                "text": "我现在正在写东西，离不开。"
+            }
+        ],
+        "target_phrase": "离不开",
+        "literal": "(I) can't leave it.",
+        "intent": "说明正用着、离不开设备，婉拒出借",
+        "emotion": "客观、无奈、委婉",
+        "alternative": "我正在赶文档，暂时借不了。"
+    },
+    {
+        "id": 36,
+        "scene": "收到提醒",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "别忘了明天交作业！"
+            },
+            {
+                "speaker": "我",
+                "text": "收到收到，谢谢你提醒！"
+            }
+        ],
+        "target_phrase": "收到收到，谢谢你提醒",
+        "literal": "Got it, thanks for the reminder!",
+        "intent": "确认收到提醒并致谢",
+        "emotion": "认真、感激、配合",
+        "alternative": "记住啦，多亏你告诉我。"
+    },
+    {
+        "id": 37,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "我放歌会不会吵到你？"
+            },
+            {
+                "speaker": "我",
+                "text": "还好，声音不大。"
+            }
+        ],
+        "target_phrase": "还好，声音不大",
+        "literal": "It's fine, not loud.",
+        "intent": "安抚对方，表示没被打扰、不用担心",
+        "emotion": "随和、宽容、体贴",
+        "alternative": "没事，我不受影响。"
+    },
+    {
+        "id": 38,
+        "scene": "组队打球",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "下午去打球吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我下午有课。"
+            }
+        ],
+        "target_phrase": "我下午有课",
+        "literal": "I have class this afternoon.",
+        "intent": "以课程安排作客观理由婉拒邀约",
+        "emotion": "客观、歉意、平淡",
+        "alternative": "下午满课，去不了球场。"
+    },
+    {
+        "id": 39,
+        "scene": "请教",
+        "dialogue": [
+            {
+                "speaker": "我",
+                "text": "能不能麻烦你帮我看一眼？"
+            },
+            {
+                "speaker": "对方",
+                "text": "拿来我看看。"
+            }
+        ],
+        "target_phrase": "能不能麻烦你帮我看一眼",
+        "literal": "Could I trouble you to take a look for me?",
+        "intent": "客气地请求对方帮忙检查",
+        "emotion": "客气、小心、求助",
+        "alternative": "可以帮我看一下这个吗？"
+    },
+    {
+        "id": 40,
+        "scene": "奶茶店拼单",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "要不要一起拼单减钱？"
+            },
+            {
+                "speaker": "我",
+                "text": "我今天不想喝甜的。"
+            }
+        ],
+        "target_phrase": "我今天不想喝甜的",
+        "literal": "I don't want anything sweet today.",
+        "intent": "以个人喜好婉拒拼单",
+        "emotion": "随意、礼貌、温和",
+        "alternative": "谢谢，今天不想喝奶茶。"
+    },
+    {
+        "id": 41,
+        "scene": "小组作业",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "我们能不能延后一天交？"
+            },
+            {
+                "speaker": "我",
+                "text": "我这边应该赶得及。"
+            }
+        ],
+        "target_phrase": "我这边应该赶得及",
+        "literal": "I should make it on my end.",
+        "intent": "表达自己进度没问题，不支持延后交稿",
+        "emotion": "自信、务实、委婉",
+        "alternative": "我可以按时完成，不用延后。"
+    },
+    {
+        "id": 42,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "你要不要尝尝我带的家乡特产？"
+            },
+            {
+                "speaker": "我",
+                "text": "哇，那太好了！"
+            }
+        ],
+        "target_phrase": "哇，那太好了",
+        "literal": "Wow, that's great!",
+        "intent": "开心接受别人分享的食物，积极回应",
+        "emotion": "开心、惊喜、热情",
+        "alternative": "好呀，谢谢你！"
+    },
+    {
+        "id": 43,
+        "scene": "自习室",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "等下要不要一起去吃饭？"
+            },
+            {
+                "speaker": "我",
+                "text": "我想再学一会儿。"
+            }
+        ],
+        "target_phrase": "我想再学一会儿",
+        "literal": "I want to study a bit longer.",
+        "intent": "说明自己的计划，婉拒立刻去吃饭",
+        "emotion": "专注、平静、坚定",
+        "alternative": "我打算再多学一段时间。"
+    },
+    {
+        "id": 44,
+        "scene": "借笔",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "能不能借我一支笔？"
+            },
+            {
+                "speaker": "我",
+                "text": "拿去用吧。"
+            }
+        ],
+        "target_phrase": "拿去用吧",
+        "literal": "Take it and use it.",
+        "intent": "爽快答应出借物品",
+        "emotion": "随和、大方、爽快",
+        "alternative": "给你，用完还给我就行。"
+    },
+    {
+        "id": 45,
+        "scene": "班级活动",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "活动拍照你愿意上镜吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我不太喜欢拍照。"
+            }
+        ],
+        "target_phrase": "我不太喜欢拍照",
+        "literal": "I'm not really into taking photos.",
+        "intent": "以个人偏好为由婉拒入镜",
+        "emotion": "委婉、退缩、含蓄",
+        "alternative": "不好意思，我不太想拍。"
+    },
+    {
+        "id": 46,
+        "scene": "下课",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "等下要不要一起去图书馆？"
+            },
+            {
+                "speaker": "我",
+                "text": "我先回宿舍放个东西。"
+            }
+        ],
+        "target_phrase": "我先回宿舍放个东西",
+        "literal": "Let me put something back at the dorm first.",
+        "intent": "说明现有安排，不一定是拒绝，可能随后汇合",
+        "emotion": "自然、说明、留余地",
+        "alternative": "我先回宿舍一趟，之后再说。"
+    },
+    {
+        "id": 47,
+        "scene": "收到夸奖",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "你这次作业做得好棒！"
+            },
+            {
+                "speaker": "我",
+                "text": "运气好而已。"
+            }
+        ],
+        "target_phrase": "运气好而已",
+        "literal": "Just got lucky.",
+        "intent": "典型中国式谦虚，收到夸赞时降低自己",
+        "emotion": "谦虚、低调、客气",
+        "alternative": "谢谢你，我也是慢慢改出来的。"
+    },
+    {
+        "id": 48,
+        "scene": "小组分工",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "这个任务比较难，你看行吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我尽力试试。"
+            }
+        ],
+        "target_phrase": "我尽力试试",
+        "literal": "I'll try my best.",
+        "intent": "愿意接受任务，但不保证一定做好",
+        "emotion": "积极、谨慎、尽职",
+        "alternative": "我会努力做好这个部分。"
+    },
+    {
+        "id": 49,
+        "scene": "雨天",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "要不要和我共一把伞？"
+            },
+            {
+                "speaker": "我",
+                "text": "谢谢你，我伞就在包里。"
+            }
+        ],
+        "target_phrase": "谢谢你，我伞就在包里",
+        "literal": "Thanks, my umbrella is right in my bag.",
+        "intent": "感谢对方好意，同时说明自己不需要",
+        "emotion": "感激、礼貌、从容",
+        "alternative": "感谢啦，我自己带伞了。"
+    },
+    {
+        "id": 50,
+        "scene": "结束对话",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "那我们今天先聊到这里"
+            },
+            {
+                "speaker": "我",
+                "text": "好，那回头再说。"
+            }
+        ],
+        "target_phrase": "回头再说",
+        "literal": "Let's talk about it later.",
+        "intent": "结束当前话题，表示以后有空再沟通",
+        "emotion": "随意、收尾、无害",
+        "alternative": "好，我们之后再联系。"
+    },
+    {
+        "id": 51,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "能不能帮我带一份早饭？"
+            },
+            {
+                "speaker": "我",
+                "text": "我出门时间不确定。"
+            }
+        ],
+        "target_phrase": "我出门时间不确定",
+        "literal": "My departure time is uncertain.",
+        "intent": "以时间不确定为由婉拒帮带早饭",
+        "emotion": "委婉、歉意、客观",
+        "alternative": "我出门时间不好说，怕耽误你。"
+    },
+    {
+        "id": 52,
+        "scene": "小组汇报",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "等下汇报你来主讲可以吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我有点紧张，不太擅长上台。"
+            }
+        ],
+        "target_phrase": "我有点紧张，不太擅长上台",
+        "literal": "I get nervous; I'm not good being on stage.",
+        "intent": "以容易紧张为由推辞上台汇报",
+        "emotion": "紧张、怯场、推辞",
+        "alternative": "我不太擅长当众发言，换别人好不好？"
+    },
+    {
+        "id": 53,
+        "scene": "自习室",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "这道题你是怎么想的？"
+            },
+            {
+                "speaker": "我",
+                "text": "我思路不一定对，仅供参考。"
+            }
+        ],
+        "target_phrase": "仅供参考",
+        "literal": "Just for reference.",
+        "intent": "提前降低预期，说明自己的想法不一定对",
+        "emotion": "谦逊、谨慎、留余地",
+        "alternative": "这只是我的想法，你可以再看看。"
+    },
+    {
+        "id": 54,
+        "scene": "约看电影",
+        "dialogue": [
+            {
+                "speaker": "朋友",
+                "text": "周末一起去看新上映的电影吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我对这个题材不太感兴趣。"
+            }
+        ],
+        "target_phrase": "我对这个题材不太感兴趣",
+        "literal": "I'm not really interested in this genre.",
+        "intent": "以喜好温和拒绝观影邀约",
+        "emotion": "平和、含蓄、礼貌",
+        "alternative": "谢谢，这个类型我不太想看。"
+    },
+    {
+        "id": 55,
+        "scene": "借充电宝",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "充电宝借我一下？"
+            },
+            {
+                "speaker": "我",
+                "text": "我自己也快没电了。"
+            }
+        ],
+        "target_phrase": "我自己也快没电了",
+        "literal": "I'm almost out of battery myself.",
+        "intent": "说明自身电量也不足，实在没法出借",
+        "emotion": "客观、抱歉、无奈",
+        "alternative": "抱歉，我电量也不多了。"
+    },
+    {
+        "id": 56,
+        "scene": "收到消息",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "记得把文件发我"
+            },
+            {
+                "speaker": "我",
+                "text": "收到，晚点发给你。"
+            }
+        ],
+        "target_phrase": "收到，晚点发给你",
+        "literal": "Got it, I'll send it to you later.",
+        "intent": "确认收到要求，告知延后交付",
+        "emotion": "配合、应允、致歉",
+        "alternative": "好的，我稍后发给你。"
+    },
+    {
+        "id": 57,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "要不要一起点夜宵？"
+            },
+            {
+                "speaker": "我",
+                "text": "我打算早点睡觉，不吃了。"
+            }
+        ],
+        "target_phrase": "我打算早点睡觉，不吃了",
+        "literal": "I plan to sleep early; I won't eat.",
+        "intent": "以早睡计划为由婉拒夜宵邀约",
+        "emotion": "平静、克制、婉转",
+        "alternative": "我准备休息，不吃夜宵啦。"
+    },
+    {
+        "id": 58,
+        "scene": "课堂讨论",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "你同意这个看法吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我保留一点不同意见。"
+            }
+        ],
+        "target_phrase": "我保留一点不同意见",
+        "literal": "I have a slight difference of opinion.",
+        "intent": "较正式、委婉地表达不认同，避免冲突",
+        "emotion": "审慎、克制、礼貌",
+        "alternative": "我有一点不一样的想法。"
+    },
+    {
+        "id": 59,
+        "scene": "帮忙填问卷",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "能不能帮我填一下问卷？"
+            },
+            {
+                "speaker": "我",
+                "text": "等我忙完这一阵哈。"
+            }
+        ],
+        "target_phrase": "等我忙完这一阵哈",
+        "literal": "Wait till I get past this busy stretch.",
+        "intent": "不是拒绝而是延后处理，语气客气",
+        "emotion": "客气、歉意、有承诺",
+        "alternative": "我现在有点忙，之后帮你填。"
+    },
+    {
+        "id": 60,
+        "scene": "打球",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "你打得好厉害！"
+            },
+            {
+                "speaker": "我",
+                "text": "还好，随便玩玩。"
+            }
+        ],
+        "target_phrase": "还好，随便玩玩",
+        "literal": "It's fine, just playing around.",
+        "intent": "收到夸奖后的谦虚回复",
+        "emotion": "谦虚、随意、低调",
+        "alternative": "没有啦，就是随便打打。"
+    },
+    {
+        "id": 61,
+        "scene": "小组作业",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "我们要不要把这个内容再加长一点？"
+            },
+            {
+                "speaker": "我",
+                "text": "太长会不会显得啰嗦？"
+            }
+        ],
+        "target_phrase": "太长会不会显得啰嗦？",
+        "literal": "Wouldn't it get too long and wordy?",
+        "intent": "用反问方式提顾虑，不直接否定对方",
+        "emotion": "审慎、委婉、提忧",
+        "alternative": "我担心内容太多会冗余。"
+    },
+    {
+        "id": 62,
+        "scene": "路上",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "你知道教学楼A怎么走吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我不太熟这边，你问问保安？"
+            }
+        ],
+        "target_phrase": "我不太熟这边",
+        "literal": "I'm not familiar around here.",
+        "intent": "如实说明自己不熟、无法指路，建议问人",
+        "emotion": "平静、如实、略带抱歉",
+        "alternative": "这条路我不太清楚，你问问别人吧。"
+    },
+    {
+        "id": 63,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "我放视频会不会吵到你？"
+            },
+            {
+                "speaker": "我",
+                "text": "还好，我戴着耳机。"
+            }
+        ],
+        "target_phrase": "还好，我戴着耳机",
+        "literal": "It's fine, I have earphones on.",
+        "intent": "告知对方不受影响，打消顾虑",
+        "emotion": "随和、体贴、宽容",
+        "alternative": "没事，我有耳机，听不到。"
+    },
+    {
+        "id": 64,
+        "scene": "约跑步",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "明天早上六点操场跑步吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "六点对我来说太早了。"
+            }
+        ],
+        "target_phrase": "六点对我来说太早了",
+        "literal": "Six o'clock is too early for me.",
+        "intent": "温和拒绝早起的邀约，语气带商量",
+        "emotion": "坦白、无奈、商量",
+        "alternative": "我起不来这么早，换个时间？"
+    },
+    {
+        "id": 65,
+        "scene": "借资料",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "能不能把你的复习资料发我一份？"
+            },
+            {
+                "speaker": "我",
+                "text": "这个是我自己整理的，不太方便外传。"
+            }
+        ],
+        "target_phrase": "不太方便外传",
+        "literal": "It's not convenient to share.",
+        "intent": "以是自己整理为由婉拒分享资料",
+        "emotion": "委婉、坚持、保护隐私",
+        "alternative": "不好意思，这份我不想发给别人。"
+    },
+    {
+        "id": 66,
+        "scene": "得到帮助",
+        "dialogue": [
+            {
+                "speaker": "对方",
+                "text": "搞定了。"
+            },
+            {
+                "speaker": "我",
+                "text": "欠你一个人情！"
+            }
+        ],
+        "target_phrase": "欠你一个人情",
+        "literal": "I owe you one!",
+        "intent": "口语化地表达感谢，暗含将来愿意回报",
+        "emotion": "感激、亲昵、承诺",
+        "alternative": "这次真的麻烦你了，下次我帮你。"
+    },
+    {
+        "id": 67,
+        "scene": "社团活动",
+        "dialogue": [
+            {
+                "speaker": "负责人",
+                "text": "周末活动需要志愿者，你来吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我周末有别的安排了。"
+            }
+        ],
+        "target_phrase": "我周末有别的安排了",
+        "literal": "I have other plans this weekend.",
+        "intent": "以已有安排为由婉拒做志愿者",
+        "emotion": "客观、歉意、委婉",
+        "alternative": "周末我已经有事了，参加不了。"
+    },
+    {
+        "id": 68,
+        "scene": "自习室",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "能不能和你换个位置？"
+            },
+            {
+                "speaker": "我",
+                "text": "可以呀，没问题。"
+            }
+        ],
+        "target_phrase": "可以呀，没问题",
+        "literal": "Sure, no problem.",
+        "intent": "爽快答应对方的请求",
+        "emotion": "爽快、配合、随和",
+        "alternative": "好，我们换位置。"
+    },
+    {
+        "id": 69,
+        "scene": "小组讨论",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "我们直接这么写行不行？"
+            },
+            {
+                "speaker": "我",
+                "text": "理论上可以，但是有风险。"
+            }
+        ],
+        "target_phrase": "理论上可以，但是有风险",
+        "literal": "Theoretically fine, but there's risk.",
+        "intent": "先承认可行性再提醒隐患，委婉劝阻",
+        "emotion": "审慎、担忧、讲理",
+        "alternative": "方法是可行的，不过需要考虑风险。"
+    },
+    {
+        "id": 70,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "要不要一起拼单买水果？"
+            },
+            {
+                "speaker": "我",
+                "text": "我水果还有很多。"
+            }
+        ],
+        "target_phrase": "我水果还有很多",
+        "literal": "I still have plenty of fruit.",
+        "intent": "说明存货充足，婉拒拼单",
+        "emotion": "平淡、礼貌、客观",
+        "alternative": "谢谢你，我暂时不用买。"
+    },
+    {
+        "id": 71,
+        "scene": "请教老师",
+        "dialogue": [
+            {
+                "speaker": "我",
+                "text": "老师，打扰您一下。"
+            },
+            {
+                "speaker": "老师",
+                "text": "你说。"
+            }
+        ],
+        "target_phrase": "打扰您一下",
+        "literal": "Sorry to trouble you for a moment.",
+        "intent": "向长辈或老师提问的礼貌开场白",
+        "emotion": "尊敬、礼貌、小心",
+        "alternative": "老师，不好意思占用您一点时间。"
+    },
+    {
+        "id": 72,
+        "scene": "借耳机",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "耳机借我听一会儿？"
+            },
+            {
+                "speaker": "我",
+                "text": "等我听完这首歌哈。"
+            }
+        ],
+        "target_phrase": "等我听完这首歌哈",
+        "literal": "Wait till I finish this song.",
+        "intent": "答应出借，延后一小段时间",
+        "emotion": "随意、爽快、亲近",
+        "alternative": "我听完这一段就给你。"
+    },
+    {
+        "id": 73,
+        "scene": "班级投票",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "你打算投给谁？"
+            },
+            {
+                "speaker": "我",
+                "text": "我还没想好。"
+            }
+        ],
+        "target_phrase": "我还没想好",
+        "literal": "I haven't decided yet.",
+        "intent": "不愿透露投票倾向，委婉回避追问",
+        "emotion": "含糊、回避、礼貌",
+        "alternative": "我暂时还没有决定。"
+    },
+    {
+        "id": 74,
+        "scene": "约饭",
+        "dialogue": [
+            {
+                "speaker": "朋友",
+                "text": "中午一起去食堂吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我想先去一趟超市。"
+            }
+        ],
+        "target_phrase": "我想先去一趟超市",
+        "literal": "I want to go to the supermarket first.",
+        "intent": "说明前置行程，不一定是拒绝同行",
+        "emotion": "自然、说明、留余地",
+        "alternative": "我先去超市，之后再去食堂。"
+    },
+    {
+        "id": 75,
+        "scene": "小组作业",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "这个部分交给你可以吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我尽量安排时间。"
+            }
+        ],
+        "target_phrase": "我尽量安排时间",
+        "literal": "I'll try to make time.",
+        "intent": "愿意承接，但不保证一定有空",
+        "emotion": "积极、谨慎、留余地",
+        "alternative": "我看看能不能挤出时间。"
+    },
+    {
+        "id": 76,
+        "scene": "收到礼物",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "这个小礼物送给你。"
+            },
+            {
+                "speaker": "我",
+                "text": "不用这么客气！"
+            }
+        ],
+        "target_phrase": "不用这么客气",
+        "literal": "No need to be so polite!",
+        "intent": "收到礼物时的客套，有时是推辞有时是惊喜",
+        "emotion": "客气、亲近、惊喜",
+        "alternative": "你太破费啦，谢谢！"
+    },
+    {
+        "id": 77,
+        "scene": "自习室",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "能不能和你讨论一下这道题？"
+            },
+            {
+                "speaker": "我",
+                "text": "我现在正在赶任务，晚点可以吗？"
+            }
+        ],
+        "target_phrase": "晚点可以吗？",
+        "literal": "Can it be a bit later?",
+        "intent": "当下不方便，请求延后沟通",
+        "emotion": "歉意、商量、无奈",
+        "alternative": "我现在有点忙，等下我们再聊？"
+    },
+    {
+        "id": 78,
+        "scene": "雨天",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "你要不要和我一起走？"
+            },
+            {
+                "speaker": "我",
+                "text": "谢谢你，我等雨小一点再走。"
+            }
+        ],
+        "target_phrase": "我等雨小一点再走",
+        "literal": "Thanks; I'll wait till the rain eases a bit.",
+        "intent": "感谢好意，说明自己的计划",
+        "emotion": "感激、从容、坚持",
+        "alternative": "我打算等雨小一些再出发。"
+    },
+    {
+        "id": 79,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "要不要周末一起去逛商圈？"
+            },
+            {
+                "speaker": "我",
+                "text": "我预算不太够。"
+            }
+        ],
+        "target_phrase": "我预算不太够",
+        "literal": "My budget isn't quite enough.",
+        "intent": "以资金原因婉拒去逛街",
+        "emotion": "无奈、坦诚、歉意",
+        "alternative": "我最近花钱比较多，先不去了。"
+    },
+    {
+        "id": 80,
+        "scene": "小组汇报",
+        "dialogue": [
+            {
+                "speaker": "老师",
+                "text": "你们这个项目还有什么不足？"
+            },
+            {
+                "speaker": "我",
+                "text": "我们还有很多地方有待完善。"
+            }
+        ],
+        "target_phrase": "有待完善",
+        "literal": "It still needs improvement.",
+        "intent": "较正式谦虚地承认项目存在不足",
+        "emotion": "谦逊、客观、谨慎",
+        "alternative": "我们还有不少可以优化的地方。"
+    },
+    {
+        "id": 81,
+        "scene": "借平板",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "平板借我看一下课件？"
+            },
+            {
+                "speaker": "我",
+                "text": "里面有我的私人笔记，不太方便。"
+            }
+        ],
+        "target_phrase": "里面有我的私人笔记，不太方便",
+        "literal": "It has my private notes, so it's not convenient.",
+        "intent": "以隐私为由婉拒出借设备",
+        "emotion": "委婉、坚持、抱歉",
+        "alternative": "不好意思，里面有私人内容。"
+    },
+    {
+        "id": 82,
+        "scene": "路上偶遇",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "好久不见！最近怎么样？"
+            },
+            {
+                "speaker": "我",
+                "text": "还行，就那样。"
+            }
+        ],
+        "target_phrase": "还行，就那样",
+        "literal": "It's okay, just so-so.",
+        "intent": "中性平淡地回答，不想深入聊近况",
+        "emotion": "平淡、疏离、回避",
+        "alternative": "平平常常，和之前差不多。"
+    },
+    {
+        "id": 83,
+        "scene": "社团开会",
+        "dialogue": [
+            {
+                "speaker": "负责人",
+                "text": "谁愿意负责宣传？"
+            },
+            {
+                "speaker": "我",
+                "text": "我可以尝试一下。"
+            }
+        ],
+        "target_phrase": "我可以尝试一下",
+        "literal": "I can give it a shot.",
+        "intent": "主动认领任务，语气谦虚",
+        "emotion": "主动、谦虚、谨慎",
+        "alternative": "宣传这块我愿意试一试。"
+    },
+    {
+        "id": 84,
+        "scene": "食堂",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "这个菜好吃吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "看个人口味吧。"
+            }
+        ],
+        "target_phrase": "看个人口味吧",
+        "literal": "Depends on personal taste.",
+        "intent": "不给绝对评价，表示喜好因人而异",
+        "emotion": "中立、客观、随和",
+        "alternative": "每个人口味不一样，你可以试试。"
+    },
+    {
+        "id": 85,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "能不能帮我关一下灯？"
+            },
+            {
+                "speaker": "我",
+                "text": "好嘞。"
+            }
+        ],
+        "target_phrase": "好嘞",
+        "literal": "Got it!",
+        "intent": "口语爽快答应，熟人之间常用",
+        "emotion": "爽快、随和、亲切",
+        "alternative": "没问题。"
+    },
+    {
+        "id": 86,
+        "scene": "约自习",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "明天早上八点图书馆自习吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我明天早上要去办手续。"
+            }
+        ],
+        "target_phrase": "我明天早上要去办手续",
+        "literal": "I need to handle some paperwork tomorrow morning.",
+        "intent": "客观事务冲突，婉拒邀约",
+        "emotion": "客观、歉意、平淡",
+        "alternative": "明天早上我有事，没法去自习。"
+    },
+    {
+        "id": 87,
+        "scene": "小组讨论",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "我们直接照搬这个方案行不行？"
+            },
+            {
+                "speaker": "我",
+                "text": "最好不要直接照搬。"
+            }
+        ],
+        "target_phrase": "最好不要直接照搬",
+        "literal": "Better not to copy it directly.",
+        "intent": "温和劝阻，不生硬命令",
+        "emotion": "委婉、关切、建议",
+        "alternative": "直接照搬不太合适，我们改一改。"
+    },
+    {
+        "id": 88,
+        "scene": "收到通知",
+        "dialogue": [
+            {
+                "speaker": "班长",
+                "text": "周五下午要开班会"
+            },
+            {
+                "speaker": "我",
+                "text": "知道了，我会准时到。"
+            }
+        ],
+        "target_phrase": "知道了，我会准时到",
+        "literal": "Got it, I'll be there on time.",
+        "intent": "确认通知，承诺按时参加",
+        "emotion": "认真、配合、可靠",
+        "alternative": "收到，我不会迟到。"
+    },
+    {
+        "id": 89,
+        "scene": "借雨伞",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "伞借我，我很快回来还给你。"
+            },
+            {
+                "speaker": "我",
+                "text": "行，小心一点。"
+            }
+        ],
+        "target_phrase": "行，小心一点",
+        "literal": "Okay, be careful.",
+        "intent": "答应出借并附带一句关心",
+        "emotion": "爽快、关怀、亲切",
+        "alternative": "拿去，路上注意安全。"
+    },
+    {
+        "id": 90,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "要不要一起打游戏？"
+            },
+            {
+                "speaker": "我",
+                "text": "我今天想把作业写完。"
+            }
+        ],
+        "target_phrase": "我今天想把作业写完",
+        "literal": "I want to finish my homework today.",
+        "intent": "说明学习计划，婉拒游戏邀约",
+        "emotion": "专注、坚定、平静",
+        "alternative": "我打算写完作业，就不玩啦。"
+    },
+    {
+        "id": 91,
+        "scene": "请教问题",
+        "dialogue": [
+            {
+                "speaker": "我",
+                "text": "这个地方我是不是理解错了？"
+            },
+            {
+                "speaker": "对方",
+                "text": "我们一起看看。"
+            }
+        ],
+        "target_phrase": "我是不是理解错了？",
+        "literal": "Did I misunderstand this part?",
+        "intent": "带疑问与对方探讨，委婉求证",
+        "emotion": "疑惑、虚心、求助",
+        "alternative": "我不确定我的理解对不对，你帮我看看？"
+    },
+    {
+        "id": 92,
+        "scene": "班级活动",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "活动结束之后要不要一起聚餐？"
+            },
+            {
+                "speaker": "我",
+                "text": "我后面还有别的安排。"
+            }
+        ],
+        "target_phrase": "我后面还有别的安排",
+        "literal": "I have other plans afterward.",
+        "intent": "婉拒活动结束后的聚餐邀约",
+        "emotion": "客观、歉意、委婉",
+        "alternative": "活动结束我有事，没法一起吃饭。"
+    },
+    {
+        "id": 93,
+        "scene": "自习室",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "能不能小声一点？"
+            },
+            {
+                "speaker": "我",
+                "text": "哎呀，不好意思！"
+            }
+        ],
+        "target_phrase": "哎呀，不好意思",
+        "literal": "Ah, sorry about that!",
+        "intent": "意识到喧哗打扰别人，立刻道歉",
+        "emotion": "愧疚、慌忙、歉意",
+        "alternative": "抱歉，我马上压低声音。"
+    },
+    {
+        "id": 94,
+        "scene": "小组作业",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "这个bug你来修一下好不好？"
+            },
+            {
+                "speaker": "我",
+                "text": "我可以试着找找原因。"
+            }
+        ],
+        "target_phrase": "我可以试着找找原因",
+        "literal": "I can try to look for the cause.",
+        "intent": "愿意尝试排查，但不保证一定修好",
+        "emotion": "积极、谨慎、尽责",
+        "alternative": "我尝试排查一下这个问题。"
+    },
+    {
+        "id": 95,
+        "scene": "路上",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "你这个书包好好看！"
+            },
+            {
+                "speaker": "我",
+                "text": "还好吧，随便买的。"
+            }
+        ],
+        "target_phrase": "还好吧，随便买的",
+        "literal": "It's okay, just bought it casually.",
+        "intent": "收到夸奖后的谦虚客套",
+        "emotion": "谦虚、随意、低调",
+        "alternative": "谢谢，就是随便挑的。"
+    },
+    {
+        "id": 96,
+        "scene": "借剪刀",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "剪刀借我用一下？"
+            },
+            {
+                "speaker": "我",
+                "text": "在抽屉里，你自己拿。"
+            }
+        ],
+        "target_phrase": "在抽屉里，你自己拿",
+        "literal": "It's in the drawer; help yourself.",
+        "intent": "同意借用并告知物品位置",
+        "emotion": "大方、随意、爽快",
+        "alternative": "给你，就在抽屉里面。"
+    },
+    {
+        "id": 97,
+        "scene": "约游泳馆",
+        "dialogue": [
+            {
+                "speaker": "同学",
+                "text": "下午去游泳馆游泳吗？"
+            },
+            {
+                "speaker": "我",
+                "text": "我没有带泳衣。"
+            }
+        ],
+        "target_phrase": "我没有带泳衣",
+        "literal": "I didn't bring a swimsuit.",
+        "intent": "客观缺少物品，婉拒邀约",
+        "emotion": "无奈、坦诚、抱歉",
+        "alternative": "不好意思，我没带装备。"
+    },
+    {
+        "id": 98,
+        "scene": "小组讨论收尾",
+        "dialogue": [
+            {
+                "speaker": "组员",
+                "text": "那我们今天讨论到这里？"
+            },
+            {
+                "speaker": "我",
+                "text": "好，有问题我们线上沟通。"
+            }
+        ],
+        "target_phrase": "有问题我们线上沟通",
+        "literal": "If there's an issue, we'll talk online.",
+        "intent": "结束线下讨论，约定线上沟通",
+        "emotion": "平和、收尾、配合",
+        "alternative": "好，后面有疑问我们在群里说。"
+    },
+    {
+        "id": 99,
+        "scene": "宿舍",
+        "dialogue": [
+            {
+                "speaker": "室友",
+                "text": "能不能帮我带一杯奶茶？"
+            },
+            {
+                "speaker": "我",
+                "text": "我不一定经过奶茶店。"
+            }
+        ],
+        "target_phrase": "我不一定经过奶茶店",
+        "literal": "I might not pass by the milk tea shop.",
+        "intent": "以路线不确定为由婉拒帮带奶茶",
+        "emotion": "委婉、歉意、客观",
+        "alternative": "我路线不确定，不一定路过。"
+    },
+    {
+        "id": 100,
+        "scene": "收到别人的帮助",
+        "dialogue": [
+            {
+                "speaker": "对方",
+                "text": "搞定啦。"
+            },
+            {
+                "speaker": "我",
+                "text": "辛苦你啦！"
+            }
+        ],
+        "target_phrase": "辛苦你啦",
+        "literal": "Thanks for the hard work!",
+        "intent": "非常常用的道谢，适合同学、组员之间",
+        "emotion": "感激、亲昵、真诚",
+        "alternative": "麻烦你了，真的感谢。"
+    }
+]

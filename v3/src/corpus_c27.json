@@ -1,0 +1,374 @@
+[
+  {
+    "id": 1,
+    "scene": "宿舍",
+    "dialogue": [
+      {"speaker": "对方", "text": "周末又要查寝啊……行吧。"},
+      {"speaker": "我", "text": "查就查呗，又不用你操心，反正咱们都在。"}
+    ],
+    "target_phrase": "行吧",
+    "literal": "OK then.",
+    "intent": "表面接受，实际对安排不满又觉得争不过，只能无奈妥协",
+    "emotion": "无奈、憋屈",
+    "alternative": "听出TA其实不情愿：'你是不是周末本来有安排？要不咱们一起问问宿管能不能调一批？'"
+  },
+  {
+    "id": 2,
+    "scene": "宿舍",
+    "dialogue": [
+      {"speaker": "我", "text": "晚上点外卖，你想吃啥？"},
+      {"speaker": "对方", "text": "随便，你们定就行。"},
+      {"speaker": "我", "text": "行，那就点螺蛳粉！"},
+      {"speaker": "对方", "text": "……你不是知道我闻不了那个味儿吗。"}
+    ],
+    "target_phrase": "随便",
+    "literal": "Whatever.",
+    "intent": "嘴上说随便，其实心里有偏好，只是懒得反复沟通或觉得说了不算",
+    "emotion": "敷衍中带着一点期待落空",
+    "alternative": "别真随便，给具体选项：'黄焖鸡、麻辣烫、炒饭三选一，你挑一个我就下单。'"
+  },
+  {
+    "id": 3,
+    "scene": "宿舍",
+    "dialogue": [
+      {"speaker": "我", "text": "帮我看看这份社团招新海报，做得怎么样？"},
+      {"speaker": "对方", "text": "嗯……挺好的。"},
+      {"speaker": "我", "text": "真的吗？那我就交上去了！"}
+    ],
+    "target_phrase": "挺好的",
+    "literal": "It's pretty good.",
+    "intent": "其实觉得一般或没认真看，用笼统夸奖结束话题，不想深入点评",
+    "emotion": "心不在焉、不好意思泼冷水",
+    "alternative": "主动要真话并降低对方压力：'别客气，你指一个最想改的地方，我今晚就调。'"
+  },
+  {
+    "id": 4,
+    "scene": "线上聊天",
+    "dialogue": [
+      {"speaker": "对方", "text": "不聊了，我先睡了，晚安。"},
+      {"speaker": "我", "text": "好，晚安。"},
+      {"speaker": "我", "text": "（四十分钟后）你游戏怎么还在线？说好睡觉的？"}
+    ],
+    "target_phrase": "我先睡了",
+    "literal": "I'm going to bed now.",
+    "intent": "不是真的困，是想结束这段聊天，话题已经让TA失去兴趣",
+    "emotion": "倦怠、想抽离",
+    "alternative": "体面收场：'好，晚安，明天聊。'同时反思刚才是不是一直在单向输出，下次让TA多说。"
+  },
+  {
+    "id": 5,
+    "scene": "职场",
+    "dialogue": [
+      {"speaker": "我", "text": "哥，能帮我看看这份报表哪里出问题了吗？数据老对不上。"},
+      {"speaker": "对方", "text": "哎呀，最近手头也忙，改天吧，改天我一定帮你看。"},
+      {"speaker": "我", "text": "好的谢谢哥！"},
+      {"speaker": "我", "text": "（一周后）哥，上次说帮我看报表的事……"}
+    ],
+    "target_phrase": "改天吧",
+    "literal": "Another day.",
+    "intent": "不想帮，又不便直接拒绝，用没有具体日期的承诺把事情悬置",
+    "emotion": "为难、想脱身",
+    "alternative": "把模糊承诺落到实处：'你哪天方便？我把文件整理好压缩到十分钟内能看完，提前放你桌上。'"
+  },
+  {
+    "id": 6,
+    "scene": "职场",
+    "dialogue": [
+      {"speaker": "我", "text": "咱们组要不要一起拼那个下午茶团购？挺划算的。"},
+      {"speaker": "对方", "text": "呃……我考虑一下。"},
+      {"speaker": "我", "text": "考虑啥呀，就差你一个了，今天下午就截止了！"}
+    ],
+    "target_phrase": "我考虑一下",
+    "literal": "Let me think about it.",
+    "intent": "不想要，但碍于同事情面不好直接说不，用拖延淡化拒绝",
+    "emotion": "勉强、怕伤和气",
+    "alternative": "给对方台阶：'没事，不着急，你要是不感兴趣也完全OK，别有压力。'"
+  },
+  {
+    "id": 7,
+    "scene": "职场",
+    "dialogue": [
+      {"speaker": "对方", "text": "（晚上九点，领导路过工位）还没走呢？辛苦了，早点回去休息吧。"},
+      {"speaker": "我", "text": "不辛苦不辛苦！您也还没走，我再干一会儿！"}
+    ],
+    "target_phrase": "辛苦了",
+    "literal": "Thanks for your hard work.",
+    "intent": "客套之外是明确的收工信号：今天的事到此为止，你可以走了，再耗着反而显得不分轻重",
+    "emotion": "客套、体恤",
+    "alternative": "接住台阶：'谢谢领导，那我把电脑带回去，剩下的明天继续。'立刻收拾下班。"
+  },
+  {
+    "id": 8,
+    "scene": "职场",
+    "dialogue": [
+      {"speaker": "我", "text": "领导，方案我改到第三版了，您看还有哪里要调整？"},
+      {"speaker": "对方", "text": "嗯，看到了，你先忙。"},
+      {"speaker": "我", "text": "那您觉得哪部分行、哪部分不行呀？"}
+    ],
+    "target_phrase": "你先忙",
+    "literal": "You go ahead with your work.",
+    "intent": "现在不想看、不想展开讨论，也可能是暗示'这种程度的事你自己拿主意'",
+    "emotion": "疲惫、略带不耐",
+    "alternative": "不纠缠，约定时间：'好的，那我明天上午十点带着打印稿来您办公室，占用五分钟就行。'"
+  },
+  {
+    "id": 9,
+    "scene": "同学聚会",
+    "dialogue": [
+      {"speaker": "对方", "text": "（散场告别时握着你的手）有空再聊啊！常联系！"},
+      {"speaker": "我", "text": "好好好，那咱们下周约个饭？周六你有空吗？"}
+    ],
+    "target_phrase": "有空再聊",
+    "literal": "Let's chat when we're free.",
+    "intent": "纯粹的客套收尾，维系关系的热络姿态，并没有真的打算约时间",
+    "emotion": "客气、体面",
+    "alternative": "配合演出但不较真：'好，常联系！'挥手道别。真想深交的人，之后单独约、单独经营。"
+  },
+  {
+    "id": 10,
+    "scene": "恋爱",
+    "dialogue": [
+      {"speaker": "我", "text": "你怎么不说话了？是不是生气了？"},
+      {"speaker": "对方", "text": "没有，我没事。"},
+      {"speaker": "我", "text": "哦，那就好，那我把游戏打完这局啊。"}
+    ],
+    "target_phrase": "没事",
+    "literal": "I'm fine.",
+    "intent": "非常生气或委屈，但不想直说，等你主动觉察和追问，此时当真就是灾难",
+    "emotion": "委屈、失望、等待被哄",
+    "alternative": "坐过去看着TA：'我感觉到你不开心，是不是我刚才那句话不合适？你说出来，我想听。'"
+  },
+  {
+    "id": 11,
+    "scene": "家庭旅行",
+    "dialogue": [
+      {"speaker": "我", "text": "妈，这有家本地菜馆评价特别高，咱们进去吃吧？"},
+      {"speaker": "对方", "text": "不用不用，我不饿，刚在车上吃过零食了，你们吃。"},
+      {"speaker": "我", "text": "那行，我们进去吃了啊。"}
+    ],
+    "target_phrase": "我不饿",
+    "literal": "I'm not hungry.",
+    "intent": "不是不饿，是看了眼菜单价格舍不得，用'不饿'替你省钱，也给自己省尴尬",
+    "emotion": "局促、心疼钱",
+    "alternative": "拆掉价格顾虑：'妈，这家我看过团购，三个菜才五十多，比家里还便宜，来都来了。'直接把TA拉进门。"
+  },
+  {
+    "id": 12,
+    "scene": "家里",
+    "dialogue": [
+      {"speaker": "对方", "text": "（白天吵架后，晚饭时）你们吃吧，我不吃了。"},
+      {"speaker": "我", "text": "不吃拉倒，饿的是你自己。"}
+    ],
+    "target_phrase": "你们吃吧",
+    "literal": "You guys go ahead and eat.",
+    "intent": "还在生气，用不吃饭表达抗议，其实等你递台阶、等一句软话",
+    "emotion": "生气、委屈、期待和解",
+    "alternative": "不逼当场和好，先递台阶：'我给你盛了碗汤放桌上了，凉了就不好喝了，多少喝一口。'"
+  },
+  {
+    "id": 13,
+    "scene": "家里",
+    "dialogue": [
+      {"speaker": "我", "text": "我来弄吧，你歇着。"},
+      {"speaker": "对方", "text": "（看我把碗又打碎一个之后）……算了，我自己来吧。"},
+      {"speaker": "我", "text": "行，那你弄，我去客厅了。"}
+    ],
+    "target_phrase": "我自己来吧",
+    "literal": "I'll do it myself.",
+    "intent": "不是嫌你笨，是对'指望你'这件事彻底失望，收回信任自己扛",
+    "emotion": "失望、心累",
+    "alternative": "先承认再行动：'这次是我毛手毛脚了，我再试最后一次，还不行就换你来，行不？'"
+  },
+  {
+    "id": 14,
+    "scene": "恋爱",
+    "dialogue": [
+      {"speaker": "对方", "text": "我肚子好疼，姨妈来了，疼得直不起腰……"},
+      {"speaker": "我", "text": "多喝热水。"},
+      {"speaker": "对方", "text": "呵呵，你真贴心。"}
+    ],
+    "target_phrase": "你真贴心",
+    "literal": "You're so sweet.",
+    "intent": "反讽。对'多喝热水'式敷衍的强烈不满：你要是上点心，就该有实际行动",
+    "emotion": "失望、讽刺、窝火",
+    "alternative": "别辩解，直接用行动补：'我刚在楼下便利店，红糖姜茶和暖宝宝二选一还是都要？五分钟到。'"
+  },
+  {
+    "id": 15,
+    "scene": "线上聊天",
+    "dialogue": [
+      {"speaker": "对方", "text": "我去洗澡了。"},
+      {"speaker": "我", "text": "好。"},
+      {"speaker": "我", "text": "（两小时后）你这是洗了俩小时？花洒成精了？"}
+    ],
+    "target_phrase": "我去洗澡了",
+    "literal": "I'm going to take a shower.",
+    "intent": "想结束这段聊天又不便明说，洗澡是最体面的下线理由",
+    "emotion": "兴致缺缺、想脱身",
+    "alternative": "爽快放行：'好，去吧～'同时回想是不是刚才一直自顾自说，下次多问TA的事。"
+  },
+  {
+    "id": 16,
+    "scene": "线上聊天",
+    "dialogue": [
+      {"speaker": "我", "text": "（发去大段文字+九张图）今天在路上碰见一只戴墨镜的柯基，笑死我了，你看看！"},
+      {"speaker": "对方", "text": "哦。"},
+      {"speaker": "我", "text": "就这样？你就没点别的想说的？"}
+    ],
+    "target_phrase": "哦",
+    "literal": "Oh.",
+    "intent": "不感兴趣或在忙，用最低成本的回应暗示'别说了'，继续倾诉只会更尴尬",
+    "emotion": "冷淡、心不在焉",
+    "alternative": "及时止损，把分享欲留给对的人：'看来你在忙，先不打扰啦，回头见～'"
+  },
+  {
+    "id": 17,
+    "scene": "恋爱",
+    "dialogue": [
+      {"speaker": "我", "text": "周末去爬山还是看电影？你选。"},
+      {"speaker": "对方", "text": "随便你，你决定就好。"},
+      {"speaker": "我", "text": "那爬山！我早就想去了！"}
+    ],
+    "target_phrase": "随便你",
+    "literal": "Up to you.",
+    "intent": "生气了。真实含义是'反正我说什么你也不当回事'，此刻再自顾自做决定等于火上浇油",
+    "emotion": "生气、失望、消极抵抗",
+    "alternative": "停下来处理情绪而不是行程：'我感觉你有点不开心，是不是我最近很多事都自己拍板了？这次你说了算，我都配合。'"
+  },
+  {
+    "id": 18,
+    "scene": "线上聊天",
+    "dialogue": [
+      {"speaker": "对方", "text": "在吗？"},
+      {"speaker": "我", "text": "在在在！咋了咋了？出啥事了？？"}
+    ],
+    "target_phrase": "在吗",
+    "literal": "Are you there?",
+    "intent": "有难处想开口（多半是借钱或求助），'在吗'是鼓起勇气前的试探，你的过度反应会增加TA开口的负担",
+    "emotion": "犹豫、忐忑、不好意思",
+    "alternative": "给足安全感：'在的，你慢慢说，我今天正好有空。'让TA把话完整说出来。"
+  },
+  {
+    "id": 19,
+    "scene": "线上聊天",
+    "dialogue": [
+      {"speaker": "我", "text": "科三一把过了！教练都夸我有天赋！"},
+      {"speaker": "对方", "text": "呵呵，厉害啊。"},
+      {"speaker": "我", "text": "那可不！你啥时候也去考一个？"}
+    ],
+    "target_phrase": "呵呵",
+    "literal": "Heh heh.",
+    "intent": "不以为然甚至有点酸，用干笑敷衍，对话越往下比越尴尬",
+    "emotion": "不屑、微微嫉妒",
+    "alternative": "见好就收，把话题递回去：'你最近在忙啥呢？上次听你说项目上的事，后来咋样了？'"
+  },
+  {
+    "id": 20,
+    "scene": "朋友聚会",
+    "dialogue": [
+      {"speaker": "我", "text": "周六来我家聚餐不？老张老李都来，就差你了。"},
+      {"speaker": "对方", "text": "哎呀，周六可能有点事，下次一定！下次我组局！"},
+      {"speaker": "我", "text": "行！那我等你组局！"}
+    ],
+    "target_phrase": "下次一定",
+    "literal": "Next time for sure.",
+    "intent": "不想来又不愿显得生分，用一个永远不会兑现的'下次'维持关系热度",
+    "emotion": "客气、想婉拒",
+    "alternative": "体面收场不追问：'哈哈行，那这顿先给你留着。'心里有数：约两次都'下次一定'的人，不必再主动约第三次。"
+  },
+  {
+    "id": 21,
+    "scene": "朋友聚会",
+    "dialogue": [
+      {"speaker": "对方", "text": "（旅行前一天）攻略你定就行，酒店、路线我都没意见，都行。"},
+      {"speaker": "我", "text": "（旅途中）你怎么全程不怎么说话？景点也不拍照？"},
+      {"speaker": "对方", "text": "没什么，就是有点累。"}
+    ],
+    "target_phrase": "都行",
+    "literal": "Either works.",
+    "intent": "可能是真随和，也可能是'反正说了也不算'的失落——行程里全程沉默说明是后者",
+    "emotion": "被忽略的失落、兴致不高",
+    "alternative": "出发前就给具体选择权：'海滩日和古镇日只能留一个，你来定，订了就不改。'让TA的'行'真正算数。"
+  },
+  {
+    "id": 22,
+    "scene": "亲戚拜访",
+    "dialogue": [
+      {"speaker": "我", "text": "叔，我想创业缺点周转资金，您看能不能借我五万？"},
+      {"speaker": "对方", "text": "（放下茶杯）呃……这个，再说吧，最近生意不好做，我手里也紧。"},
+      {"speaker": "我", "text": "叔，我真的很急用，您就当帮我这一回！"}
+    ],
+    "target_phrase": "再说吧",
+    "literal": "We'll talk about it later.",
+    "intent": "不想借，又怕把亲戚关系说僵，用'再说'无限期搁置，其实就是拒绝",
+    "emotion": "为难、防备",
+    "alternative": "别逼到墙角：'我理解，大家都不容易，那我再想别的办法。'钱要不回来没关系，关系别一起赔进去。"
+  },
+  {
+    "id": 23,
+    "scene": "家里",
+    "dialogue": [
+      {"speaker": "我", "text": "隔壁老王家提新车了，咱们要不也换一辆？"},
+      {"speaker": "对方", "text": "换车？有钱再说吧。"},
+      {"speaker": "我", "text": "咱卡里不是有存款吗？又不动大头。"}
+    ],
+    "target_phrase": "有钱再说",
+    "literal": "We'll see when we have money.",
+    "intent": "不是没钱，是觉得不该花这笔钱——对未来收入没安全感，或认为这是攀比消费",
+    "emotion": "抗拒、缺乏安全感",
+    "alternative": "不纠缠'买不买'，谈规划：'好，那咱们定个目标：存款到多少、且不影响孩子学费的前提下，再认真讨论这台车。'"
+  },
+  {
+    "id": 24,
+    "scene": "亲戚拜访",
+    "dialogue": [
+      {"speaker": "对方", "text": "（晚上九点，亲戚家沙发上）哎呀，时间不早了。"},
+      {"speaker": "我", "text": "不早不早，才九点！我这个故事还没讲完呢。"}
+    ],
+    "target_phrase": "时间不早了",
+    "literal": "It's getting late.",
+    "intent": "主人在送客：家务要收、要洗漱、想休息，只是不好意思直接下逐客令",
+    "emotion": "疲惫、客气的催促",
+    "alternative": "立刻起身：'是哦，那我不打扰了，改天你们来我这儿，我露一手。'把人送到门口，宾主尽欢。"
+  },
+  {
+    "id": 25,
+    "scene": "职场",
+    "dialogue": [
+      {"speaker": "我", "text": "这款保养套餐今天定还送两次免费保养，特别划算。"},
+      {"speaker": "对方", "text": "嗯……我回去跟家里人商量一下。"},
+      {"speaker": "我", "text": "这有啥好商量的，您自己平时开，您定不就完了？"}
+    ],
+    "target_phrase": "我跟家里人商量一下",
+    "literal": "I'll discuss it with my family.",
+    "intent": "委婉拒绝的托词：既不想买又不想当面说'不'，'商量'就是体面的退场词",
+    "emotion": "抵触、想脱身",
+    "alternative": "不拆穿不纠缠：'应该的，大事儿是该商量。资料我放您这儿，商量好了随时找我。'"
+  },
+  {
+    "id": 26,
+    "scene": "朋友聚会",
+    "dialogue": [
+      {"speaker": "对方", "text": "（饭桌上，看着我和另一个人聊得火热）你俩关系真好啊。"},
+      {"speaker": "我", "text": "那可不！我俩大学睡上下铺，上周还单独聚了呢！"}
+    ],
+    "target_phrase": "你俩关系真好啊",
+    "literal": "You two are really close.",
+    "intent": "阴阳怪气：三个人聚会却总被晾在一边，用夸奖包装'我也在，能不能带上我'的失落",
+    "emotion": "被冷落、酸溜溜",
+    "alternative": "赶紧把TA拉进话题：'哪有，要不是你组这个局，我俩十年都凑不齐。来，说说你上次提的那家火锅，咱们现在就定时间去。'"
+  },
+  {
+    "id": 27,
+    "scene": "逛街购物",
+    "dialogue": [
+      {"speaker": "对方", "text": "（在专柜前停了很久，摸了摸包）这个……挺贵的吧？"},
+      {"speaker": "我", "text": "是啊，两万多呢，疯了吧，走，咱们看楼下打折区。"}
+    ],
+    "target_phrase": "挺贵的吧",
+    "literal": "It's quite expensive, right?",
+    "intent": "明明很喜欢，用'贵'来掩饰心动、试探你的态度，也在等一句'喜欢就试试'",
+    "emotion": "心动、纠结、不好意思",
+    "alternative": "先满足体验不谈买不买：'试试呗，试试又不要钱。'喜不喜欢上身之后，值不值得买你再一起商量。"
+  }
+]

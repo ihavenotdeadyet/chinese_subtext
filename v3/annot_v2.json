@@ -1,0 +1,22 @@
+{
+  "1":  { "speaker": "室友",   "relation": "同宿舍室友" },
+  "2":  { "speaker": "同事",   "relation": "同组同事" },
+  "3":  { "speaker": "恋人",   "relation": "情侣" },
+  "4":  { "speaker": "同事",   "relation": "同组同事" },
+  "5":  { "speaker": "恋人",   "relation": "情侣" },
+  "6":  { "speaker": "朋友",   "relation": "朋友" },
+  "7":  { "speaker": "朋友",   "relation": "很久没见的老朋友" },
+  "8":  { "speaker": "同事",   "relation": "关系较近的同事" },
+  "9":  { "speaker": "面试官", "relation": "求职者与面试官" },
+  "10": { "speaker": "店员",   "relation": "顾客与店员" },
+  "11": { "speaker": "家长",   "relation": "父母与子女" },
+  "12": { "speaker": "领导",   "relation": "上下级" },
+  "13": { "speaker": "恋人",   "relation": "情侣" },
+  "14": { "speaker": "家长",   "relation": "父母与子女" },
+  "15": { "speaker": "同事",   "relation": "同组同事", "literal": "Sure thing." },
+  "16": { "speaker": "导师",   "relation": "师生" },
+  "17": { "speaker": "亲戚",   "relation": "亲戚（长辈）" },
+  "18": { "speaker": "家长",   "relation": "父母与子女" },
+  "19": { "speaker": "领导",   "relation": "上下级" },
+  "20": { "speaker": "家长",   "relation": "父母与子女" }
+}
