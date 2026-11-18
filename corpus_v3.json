@@ -5,7 +5,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "你下楼买饭吗？顺便帮我带一份呗，我打游戏走不开。"
       },
@@ -31,7 +31,7 @@
     "relation": "同组同事",
     "dialogue": [
       {
-        "speaker": "同事",
+        "speaker": "对方",
         "role": "other",
         "text": "这个需求明天上线前改一下，就调个颜色、加个字段，很快的。"
       },
@@ -57,7 +57,7 @@
     "relation": "情侣",
     "dialogue": [
       {
-        "speaker": "恋人",
+        "speaker": "对方",
         "role": "other",
         "text": "今天几号来着？……哦，好像是我们在一起的日子吧。"
       },
@@ -83,7 +83,7 @@
     "relation": "同组同事",
     "dialogue": [
       {
-        "speaker": "同事",
+        "speaker": "对方",
         "role": "other",
         "text": "这次汇报我来讲吧，数据这块我熟。"
       },
@@ -109,7 +109,7 @@
     "relation": "情侣",
     "dialogue": [
       {
-        "speaker": "恋人",
+        "speaker": "对方",
         "role": "other",
         "text": "晚上想吃什么？你定。"
       },
@@ -135,7 +135,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "周末去哪玩？你提一个，别又是我定。"
       },
@@ -161,7 +161,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "好久没见了，这周出来聚聚？我请你吃饭。"
       },
@@ -187,7 +187,7 @@
     "relation": "同组同事",
     "dialogue": [
       {
-        "speaker": "同事",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能先借我两万？下个月发工资就还你。"
       },
@@ -213,7 +213,7 @@
     "relation": "求职者与面试官",
     "dialogue": [
       {
-        "speaker": "面试官",
+        "speaker": "对方",
         "role": "other",
         "text": "你的经历挺匹配的，我们再综合评估一下，有结果通知你。"
       },
@@ -239,7 +239,7 @@
     "relation": "顾客与服务者",
     "dialogue": [
       {
-        "speaker": "店员",
+        "speaker": "对方",
         "role": "other",
         "text": "这款今天最后一天活动价，真的很划算，要不要直接给你包起来？"
       },
@@ -265,7 +265,7 @@
     "relation": "父母与子女",
     "dialogue": [
       {
-        "speaker": "家长",
+        "speaker": "对方",
         "role": "other",
         "text": "你看隔壁小王，孩子都上幼儿园了。你也该考虑考虑了吧？"
       },
@@ -291,7 +291,7 @@
     "relation": "上下级",
     "dialogue": [
       {
-        "speaker": "领导",
+        "speaker": "对方",
         "role": "other",
         "text": "这个方案周五能给客户看吧？他们已经催两轮了。"
       },
@@ -317,7 +317,7 @@
     "relation": "情侣",
     "dialogue": [
       {
-        "speaker": "恋人",
+        "speaker": "对方",
         "role": "other",
         "text": "你还在生气吗？我刚才说话是有点冲。"
       },
@@ -343,7 +343,7 @@
     "relation": "父母与子女",
     "dialogue": [
       {
-        "speaker": "家长",
+        "speaker": "对方",
         "role": "other",
         "text": "拿着，这两千你收着，自己买点好吃的，别老吃外卖。"
       },
@@ -369,7 +369,7 @@
     "relation": "同组同事",
     "dialogue": [
       {
-        "speaker": "同事",
+        "speaker": "对方",
         "role": "other",
         "text": "这个表你顺手帮我填一下吧，我这边真排不开，你比我熟。"
       },
@@ -382,7 +382,7 @@
     "target_phrase": "好的呢",
     "target_speaker": "self",
     "core_word": "好的呢",
-    "literal": "Sure thing~",
+    "literal": "Sure thing.",
     "intent": "三个字加一个「呢」，把不情愿裹成热情。对方听着舒服，但听得懂的人知道这话的意思是「怎么又是我」。",
     "emotion": "不耐烦、阴阳、维持体面",
     "alternative": "我可以填，但得排到下午。你手上那部分什么时候能给我？我们对一下时间。",
@@ -395,7 +395,7 @@
     "relation": "师生",
     "dialogue": [
       {
-        "speaker": "导师",
+        "speaker": "对方",
         "role": "other",
         "text": "这部分我按自己的思路改了一版，你看看，我觉得差不多了。"
       },
@@ -421,7 +421,7 @@
     "relation": "亲戚",
     "dialogue": [
       {
-        "speaker": "亲戚",
+        "speaker": "对方",
         "role": "other",
         "text": "听说你换工作了？现在一个月能拿多少啊？"
       },
@@ -447,7 +447,7 @@
     "relation": "父母与子女",
     "dialogue": [
       {
-        "speaker": "家长",
+        "speaker": "对方",
         "role": "other",
         "text": "你是哥哥，弟弟还小，这个玩具就让给他吧。"
       },
@@ -473,7 +473,7 @@
     "relation": "上下级",
     "dialogue": [
       {
-        "speaker": "领导",
+        "speaker": "对方",
         "role": "other",
         "text": "这个方案先按我说的改，你的想法下次再说。"
       },
@@ -499,7 +499,7 @@
     "relation": "父母与子女",
     "dialogue": [
       {
-        "speaker": "家长",
+        "speaker": "对方",
         "role": "other",
         "text": "公务员报名这周截止，你把名报了吧，稳定。"
       },
@@ -525,7 +525,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "周末又要查寝啊……行吧。"
       },
@@ -556,7 +556,7 @@
         "text": "晚上点外卖，你想吃啥？"
       },
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "随便，你们定就行。"
       },
@@ -566,7 +566,7 @@
         "text": "行，那就点螺蛳粉！"
       },
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "……你不是知道我闻不了那个味儿吗。"
       }
@@ -576,7 +576,7 @@
     "core_word": "随便",
     "literal": "Whatever.",
     "intent": "嘴上说随便，其实心里有偏好，只是懒得反复沟通或觉得说了不算",
-    "emotion": "敷衍中带着一点期待落空",
+    "emotion": "敷衍、失落",
     "alternative": "黄焖鸡、麻辣烫、炒饭三选一，你挑一个我就下单。",
     "device": "understatement",
     "source": "c27#2"
@@ -592,7 +592,7 @@
         "text": "帮我看看这份社团招新海报，做得怎么样？"
       },
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "嗯……挺好的。"
       },
@@ -618,7 +618,7 @@
     "relation": "情侣",
     "dialogue": [
       {
-        "speaker": "恋人",
+        "speaker": "对方",
         "role": "other",
         "text": "不聊了，我先睡了，晚安。"
       },
@@ -654,7 +654,7 @@
         "text": "哥，能帮我看看这份报表哪里出问题了吗？数据老对不上。"
       },
       {
-        "speaker": "同事",
+        "speaker": "对方",
         "role": "other",
         "text": "哎呀，最近手头也忙，改天吧，改天我一定帮你看。"
       },
@@ -690,7 +690,7 @@
         "text": "咱们组要不要一起拼那个下午茶团购？挺划算的。"
       },
       {
-        "speaker": "同事",
+        "speaker": "对方",
         "role": "other",
         "text": "呃……我考虑一下。"
       },
@@ -716,7 +716,7 @@
     "relation": "上下级",
     "dialogue": [
       {
-        "speaker": "领导",
+        "speaker": "对方",
         "role": "other",
         "text": "（晚上九点，领导路过工位）还没走呢？辛苦了，早点回去休息吧。"
       },
@@ -747,7 +747,7 @@
         "text": "领导，方案我改到第三版了，您看还有哪里要调整？"
       },
       {
-        "speaker": "领导",
+        "speaker": "对方",
         "role": "other",
         "text": "嗯，看到了，你先忙。"
       },
@@ -773,7 +773,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "（散场告别时握着你的手）有空再聊啊！常联系！"
       },
@@ -804,7 +804,7 @@
         "text": "你怎么不说话了？是不是生气了？"
       },
       {
-        "speaker": "恋人",
+        "speaker": "对方",
         "role": "other",
         "text": "没有，我没事。"
       },
@@ -835,7 +835,7 @@
         "text": "妈，这有家本地菜馆评价特别高，咱们进去吃吧？"
       },
       {
-        "speaker": "妈妈",
+        "speaker": "对方",
         "role": "other",
         "text": "不用不用，我不饿，刚在车上吃过零食了，你们吃。"
       },
@@ -861,7 +861,7 @@
     "relation": "家人",
     "dialogue": [
       {
-        "speaker": "家人",
+        "speaker": "对方",
         "role": "other",
         "text": "（白天吵架后，晚饭时）你们吃吧，我不吃了。"
       },
@@ -892,7 +892,7 @@
         "text": "我来弄吧，你歇着。"
       },
       {
-        "speaker": "家人",
+        "speaker": "对方",
         "role": "other",
         "text": "（看我把碗又打碎一个之后）……算了，我自己来吧。"
       },
@@ -918,7 +918,7 @@
     "relation": "情侣",
     "dialogue": [
       {
-        "speaker": "恋人",
+        "speaker": "对方",
         "role": "other",
         "text": "我肚子好疼，姨妈来了，疼得直不起腰……"
       },
@@ -928,7 +928,7 @@
         "text": "多喝热水。"
       },
       {
-        "speaker": "恋人",
+        "speaker": "对方",
         "role": "other",
         "text": "呵呵，你真贴心。"
       }
@@ -949,7 +949,7 @@
     "relation": "情侣",
     "dialogue": [
       {
-        "speaker": "恋人",
+        "speaker": "对方",
         "role": "other",
         "text": "我去洗澡了。"
       },
@@ -985,7 +985,7 @@
         "text": "（发去大段文字+九张图）今天在路上碰见一只戴墨镜的柯基，笑死我了，你看看！"
       },
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "哦。"
       },
@@ -1016,7 +1016,7 @@
         "text": "周末去爬山还是看电影？你选。"
       },
       {
-        "speaker": "恋人",
+        "speaker": "对方",
         "role": "other",
         "text": "随便你，你决定就好。"
       },
@@ -1042,7 +1042,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "在吗？"
       },
@@ -1073,7 +1073,7 @@
         "text": "科三一把过了！教练都夸我有天赋！"
       },
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "呵呵，厉害啊。"
       },
@@ -1104,7 +1104,7 @@
         "text": "周六来我家聚餐不？老张老李都来，就差你了。"
       },
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "哎呀，周六可能有点事，下次一定！下次我组局！"
       },
@@ -1130,7 +1130,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "（旅行前一天）攻略你定就行，酒店、路线我都没意见，都行。"
       },
@@ -1140,7 +1140,7 @@
         "text": "（旅途中）你怎么全程不怎么说话？景点也不拍照？"
       },
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "没什么，就是有点累。"
       }
@@ -1166,7 +1166,7 @@
         "text": "叔，我想创业缺点周转资金，您看能不能借我五万？"
       },
       {
-        "speaker": "叔叔",
+        "speaker": "对方",
         "role": "other",
         "text": "（放下茶杯）呃……这个，再说吧，最近生意不好做，我手里也紧。"
       },
@@ -1197,7 +1197,7 @@
         "text": "隔壁老王家提新车了，咱们要不也换一辆？"
       },
       {
-        "speaker": "配偶",
+        "speaker": "对方",
         "role": "other",
         "text": "换车？有钱再说吧。"
       },
@@ -1223,7 +1223,7 @@
     "relation": "亲戚",
     "dialogue": [
       {
-        "speaker": "亲戚",
+        "speaker": "对方",
         "role": "other",
         "text": "（晚上九点，亲戚家沙发上）哎呀，时间不早了。"
       },
@@ -1254,7 +1254,7 @@
         "text": "这款保养套餐今天定还送两次免费保养，特别划算。"
       },
       {
-        "speaker": "销售",
+        "speaker": "对方",
         "role": "other",
         "text": "嗯……我回去跟家里人商量一下。"
       },
@@ -1280,7 +1280,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "（饭桌上，看着我和另一个人聊得火热）你俩关系真好啊。"
       },
@@ -1306,7 +1306,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "（在专柜前停了很久，摸了摸包）这个……挺贵的吧？"
       },
@@ -1332,7 +1332,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "等下要不要一起去食堂？"
       },
@@ -1358,7 +1358,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "这个方案你觉得行不行？"
       },
@@ -1384,7 +1384,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "等下借我抄一下笔记可以吗？"
       },
@@ -1410,7 +1410,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要多点一份菜？"
       },
@@ -1436,7 +1436,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能小声一点，我要睡觉了。"
       },
@@ -1462,7 +1462,7 @@
     "relation": "求职者与面试官",
     "dialogue": [
       {
-        "speaker": "面试官",
+        "speaker": "对方",
         "role": "other",
         "text": "你还有什么想问我们的吗？"
       },
@@ -1488,7 +1488,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "顺路帮我拿个快递可以吗？"
       },
@@ -1514,7 +1514,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "这个题你会吗，教教我？"
       },
@@ -1540,7 +1540,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "再来一杯奶茶？"
       },
@@ -1566,7 +1566,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "这次活动你要不要报名？"
       },
@@ -1592,7 +1592,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能借你的充电器用一下？"
       },
@@ -1618,7 +1618,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "我们明天晚上八点集合行不行？"
       },
@@ -1644,7 +1644,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要一起走？"
       },
@@ -1675,7 +1675,7 @@
         "text": "这个地方我有点没看懂"
       },
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "我简单跟你说一下哈"
       }
@@ -1696,7 +1696,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "我新买的零食，你尝尝？"
       },
@@ -1722,7 +1722,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能帮我占一个位置？"
       },
@@ -1748,7 +1748,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要和我们组队参赛？"
       },
@@ -1774,7 +1774,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "老师刚才布置的作业是什么？"
       },
@@ -1800,7 +1800,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "等下要不要一起跑步？"
       },
@@ -1826,7 +1826,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能帮我顺便打印一份？"
       },
@@ -1852,7 +1852,7 @@
     "relation": "班干部与同学",
     "dialogue": [
       {
-        "speaker": "班长",
+        "speaker": "对方",
         "role": "other",
         "text": "谁愿意主动承担这个任务？"
       },
@@ -1878,7 +1878,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "你这个耳机音质好棒！"
       },
@@ -1904,7 +1904,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "这个部分你来负责好不好？"
       },
@@ -1930,7 +1930,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "麻烦让一下，谢谢。"
       },
@@ -1956,7 +1956,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "明天早上七点去自习吗？"
       },
@@ -1982,7 +1982,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能借我一把伞？"
       },
@@ -2008,7 +2008,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "搞定了，给你。"
       },
@@ -2034,7 +2034,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "周末一起出去玩吗？"
       },
@@ -2060,7 +2060,7 @@
     "relation": "师生",
     "dialogue": [
       {
-        "speaker": "老师",
+        "speaker": "对方",
         "role": "other",
         "text": "这个问题有没有同学愿意回答？"
       },
@@ -2086,7 +2086,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "学长",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要加入我们社团？"
       },
@@ -2112,7 +2112,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要一起拼单？"
       },
@@ -2138,7 +2138,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "你觉得这个想法怎么样？"
       },
@@ -2164,7 +2164,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "手机能不能调小声一点？"
       },
@@ -2190,7 +2190,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "晚上去吃火锅吗？"
       },
@@ -2216,7 +2216,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能借你的电脑用十分钟？"
       },
@@ -2242,7 +2242,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "别忘了明天交作业！"
       },
@@ -2268,7 +2268,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "我放歌会不会吵到你？"
       },
@@ -2294,7 +2294,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "下午去打球吗？"
       },
@@ -2325,7 +2325,7 @@
         "text": "能不能麻烦你帮我看一眼？"
       },
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "拿来我看看。"
       }
@@ -2346,7 +2346,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要一起拼单减钱？"
       },
@@ -2372,7 +2372,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "我们能不能延后一天交？"
       },
@@ -2398,7 +2398,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "你要不要尝尝我带的家乡特产？"
       },
@@ -2424,7 +2424,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "等下要不要一起去吃饭？"
       },
@@ -2450,7 +2450,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能借我一支笔？"
       },
@@ -2476,7 +2476,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "活动拍照你愿意上镜吗？"
       },
@@ -2502,7 +2502,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "等下要不要一起去图书馆？"
       },
@@ -2528,7 +2528,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "你这次作业做得好棒！"
       },
@@ -2554,7 +2554,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "这个任务比较难，你看行吗？"
       },
@@ -2580,7 +2580,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要和我共一把伞？"
       },
@@ -2606,7 +2606,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "那我们今天先聊到这里"
       },
@@ -2632,7 +2632,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能帮我带一份早饭？"
       },
@@ -2658,7 +2658,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "等下汇报你来主讲可以吗？"
       },
@@ -2684,7 +2684,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "这道题你是怎么想的？"
       },
@@ -2710,7 +2710,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "周末一起去看新上映的电影吗？"
       },
@@ -2736,7 +2736,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "充电宝借我一下？"
       },
@@ -2762,7 +2762,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "记得把文件发我"
       },
@@ -2788,7 +2788,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要一起点夜宵？"
       },
@@ -2814,7 +2814,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "你同意这个看法吗？"
       },
@@ -2840,7 +2840,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能帮我填一下问卷？"
       },
@@ -2866,7 +2866,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "你打得好厉害！"
       },
@@ -2892,7 +2892,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "我们要不要把这个内容再加长一点？"
       },
@@ -2918,7 +2918,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "你知道教学楼A怎么走吗？"
       },
@@ -2944,7 +2944,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "我放视频会不会吵到你？"
       },
@@ -2970,7 +2970,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "明天早上六点操场跑步吗？"
       },
@@ -2996,7 +2996,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能把你的复习资料发我一份？"
       },
@@ -3022,7 +3022,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "搞定了。"
       },
@@ -3048,7 +3048,7 @@
     "relation": "社团负责人与成员",
     "dialogue": [
       {
-        "speaker": "负责人",
+        "speaker": "对方",
         "role": "other",
         "text": "周末活动需要志愿者，你来吗？"
       },
@@ -3074,7 +3074,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能和你换个位置？"
       },
@@ -3100,7 +3100,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "我们直接这么写行不行？"
       },
@@ -3126,7 +3126,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要一起拼单买水果？"
       },
@@ -3157,7 +3157,7 @@
         "text": "老师，打扰您一下。"
       },
       {
-        "speaker": "老师",
+        "speaker": "对方",
         "role": "other",
         "text": "你说。"
       }
@@ -3178,7 +3178,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "耳机借我听一会儿？"
       },
@@ -3204,7 +3204,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "你打算投给谁？"
       },
@@ -3230,7 +3230,7 @@
     "relation": "朋友",
     "dialogue": [
       {
-        "speaker": "朋友",
+        "speaker": "对方",
         "role": "other",
         "text": "中午一起去食堂吗？"
       },
@@ -3256,7 +3256,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "这个部分交给你可以吗？"
       },
@@ -3282,7 +3282,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "这个小礼物送给你。"
       },
@@ -3308,7 +3308,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能和你讨论一下这道题？"
       },
@@ -3334,7 +3334,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "你要不要和我一起走？"
       },
@@ -3360,7 +3360,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要周末一起去逛商圈？"
       },
@@ -3386,7 +3386,7 @@
     "relation": "师生",
     "dialogue": [
       {
-        "speaker": "老师",
+        "speaker": "对方",
         "role": "other",
         "text": "你们这个项目还有什么不足？"
       },
@@ -3412,7 +3412,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "平板借我看一下课件？"
       },
@@ -3438,7 +3438,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "好久不见！最近怎么样？"
       },
@@ -3464,7 +3464,7 @@
     "relation": "社团负责人与成员",
     "dialogue": [
       {
-        "speaker": "负责人",
+        "speaker": "对方",
         "role": "other",
         "text": "谁愿意负责宣传？"
       },
@@ -3490,7 +3490,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "这个菜好吃吗？"
       },
@@ -3516,7 +3516,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能帮我关一下灯？"
       },
@@ -3542,7 +3542,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "明天早上八点图书馆自习吗？"
       },
@@ -3568,7 +3568,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "我们直接照搬这个方案行不行？"
       },
@@ -3594,7 +3594,7 @@
     "relation": "班干部与同学",
     "dialogue": [
       {
-        "speaker": "班长",
+        "speaker": "对方",
         "role": "other",
         "text": "周五下午要开班会"
       },
@@ -3620,7 +3620,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "伞借我，我很快回来还给你。"
       },
@@ -3646,7 +3646,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "要不要一起打游戏？"
       },
@@ -3677,7 +3677,7 @@
         "text": "这个地方我是不是理解错了？"
       },
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "我们一起看看。"
       }
@@ -3698,7 +3698,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "活动结束之后要不要一起聚餐？"
       },
@@ -3724,7 +3724,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能小声一点？"
       },
@@ -3750,7 +3750,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "这个bug你来修一下好不好？"
       },
@@ -3776,7 +3776,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "你这个书包好好看！"
       },
@@ -3802,7 +3802,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "剪刀借我用一下？"
       },
@@ -3828,7 +3828,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "下午去游泳馆游泳吗？"
       },
@@ -3854,7 +3854,7 @@
     "relation": "同组组员",
     "dialogue": [
       {
-        "speaker": "组员",
+        "speaker": "对方",
         "role": "other",
         "text": "那我们今天讨论到这里？"
       },
@@ -3880,7 +3880,7 @@
     "relation": "同宿舍室友",
     "dialogue": [
       {
-        "speaker": "室友",
+        "speaker": "对方",
         "role": "other",
         "text": "能不能帮我带一杯奶茶？"
       },
@@ -3906,7 +3906,7 @@
     "relation": "同学",
     "dialogue": [
       {
-        "speaker": "同学",
+        "speaker": "对方",
         "role": "other",
         "text": "搞定啦。"
       },

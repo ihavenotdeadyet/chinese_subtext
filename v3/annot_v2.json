@@ -13,7 +13,7 @@
   "12": { "speaker": "领导",   "relation": "上下级" },
   "13": { "speaker": "恋人",   "relation": "情侣" },
   "14": { "speaker": "家长",   "relation": "父母与子女" },
-  "15": { "speaker": "同事",   "relation": "同组同事" },
+  "15": { "speaker": "同事",   "relation": "同组同事", "literal": "Sure thing." },
   "16": { "speaker": "导师",   "relation": "师生" },
   "17": { "speaker": "亲戚",   "relation": "亲戚（长辈）" },
   "18": { "speaker": "家长",   "relation": "父母与子女" },

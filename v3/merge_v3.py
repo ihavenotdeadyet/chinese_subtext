@@ -3,22 +3,23 @@
 把三套语料合并成 corpus_v3.json。
 
 输入
-  corpus_v2.json                       20 条（V1 十条 + 自撰十条）
-  chinese_subtext_corpus.json          27 条（组员提交）
-  pragmatic_cards.json                100 条（组员提交）
+  v3/src/corpus_v2.json                20 条（V1 十条 + 自撰十条）
+  v3/src/corpus_c27.json               27 条（组员提交，原 chinese_subtext_corpus.json）
+  v3/src/pragmatic_cards.json         100 条（组员提交）
   v3/scene_map.json                    原 scene -> 统一大类
   v3/annot_v2.json                     20 条的说话人与关系
   v3/annot_c27.json                    27 条的说话人、关系、device、改写后的 alternative
   v3/annot_p100.json                  100 条的核心词、device、说话人修正
 
-  （组员那两个源文件优先在仓库根目录找，找不到再去 TEMP/merge_src。
-    本地开发副本把这些文件放在 corpus/ 下，结构等价。）
+  （源文件依次在 v3/src、仓库根目录、TEMP/merge_src 找，找到哪个用哪个。）
 
 输出
   corpus_v3.json
 
-原则：不改动任何原始语句（dialogue / literal / intent / emotion / target_phrase 一字不动），
+原则：不改动任何原始语句（dialogue / intent / target_phrase 一字不动），
 只补字段、归一场景、统一 alternative 口径、去重。
+源文件保持原样留档，个别笔误（literal 标点、emotion 写法）在标注表里改，
+这样「哪一条被人工动过」在 v3/annot_*.json 里一眼可查。
 """
 import json
 import os
@@ -26,6 +27,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
+SRC = os.path.join(HERE, "src")
 TMP = os.path.join(os.environ.get("TEMP", "/tmp"), "merge_src")
 
 DEVICES = {
@@ -70,17 +72,17 @@ def load(path):
 
 
 def src_path(name):
-    """组员提交的两个源文件：仓库里就放在根目录，本地开发时可能只在临时目录。
+    """源文件依次在 v3/src、仓库根目录、TEMP/merge_src 找。
 
-    依次尝试 仓库根 -> TEMP/merge_src，找到哪个用哪个，两处都没有就报错，
-    免得静默读到空文件生成一份残缺的语料。
+    仓库里正式留档的位置是 v3/src；根目录与临时目录是给本地开发副本用的。
+    都找不到就报错，免得静默读到空文件生成一份残缺的语料。
     """
-    for d in (ROOT, TMP):
+    for d in (SRC, ROOT, TMP):
         p = os.path.join(d, name)
         if os.path.exists(p):
             return p
     raise SystemExit(
-        "找不到源文件 %s，请把它放在仓库根目录 %s，或临时目录 %s" % (name, ROOT, TMP)
+        "找不到源文件 %s，请把它放在 %s，或临时目录 %s" % (name, SRC, TMP)
     )
 
 
@@ -111,7 +113,9 @@ def build(item, scene_map, annot, source, default_speaker=None, use_annot_alt=Fa
         if sp == "我":
             dialogue.append({"speaker": "我", "role": "self", "text": t["text"]})
         else:
-            dialogue.append({"speaker": other, "role": "other", "text": t["text"]})
+            # 说话人口径与 main 统一：非「我」的一方一律写作「对方」，
+            # 具体是室友还是销售由 relation 字段表达，不再写进 speaker。
+            dialogue.append({"speaker": "对方", "role": "other", "text": t["text"]})
 
     # 目标短语在谁嘴里：优先用标注，否则按文本找
     target = a.get("target_phrase") or item["target_phrase"]
@@ -138,9 +142,9 @@ def build(item, scene_map, annot, source, default_speaker=None, use_annot_alt=Fa
         "target_phrase": target,
         "target_speaker": who,
         "core_word": core,
-        "literal": item["literal"],
+        "literal": a.get("literal") or item["literal"],
         "intent": item["intent"],
-        "emotion": item["emotion"],
+        "emotion": a.get("emotion") or item["emotion"],
         "alternative": alt,
         "device": a.get("device") or item.get("device") or "",
         "source": source,
@@ -154,8 +158,8 @@ def main():
     a_c27 = load(os.path.join(HERE, "annot_c27.json"))
     a_p100 = load(os.path.join(HERE, "annot_p100.json"))
 
-    v2 = load(os.path.join(ROOT, "corpus_v2.json"))
-    c27 = load(src_path("chinese_subtext_corpus.json"))
+    v2 = load(src_path("corpus_v2.json"))
+    c27 = load(src_path("corpus_c27.json"))
     p100 = load(src_path("pragmatic_cards.json"))
 
     rows = []
@@ -216,9 +220,11 @@ def main():
         if len(r["core_word"]) > 8:
             print("  !! core_word 过长: #%d %s (%s)" % (r["id"], r["core_word"], r["source"]))
             bad += 1
-        if any(t["speaker"] == "对方" for t in r["dialogue"]):
-            print("  !! 说话人仍为「对方」: #%d (%s)" % (r["id"], r["source"]))
-            bad += 1
+        for t in r["dialogue"]:
+            if (t["speaker"], t["role"]) not in (("我", "self"), ("对方", "other")):
+                print("  !! 说话人与角色不匹配: #%d %s/%s (%s)"
+                      % (r["id"], t["speaker"], t["role"], r["source"]))
+                bad += 1
 
     print("校验问题数:", bad)
     print("输出:", out)

@@ -1,43 +1,45 @@
 # 语料标注规范（V3）
 
-`corpus_v3.json` 的字段定义与写作口径。V3 由 `corpus_v2.json`（20 条）、
-组员提交的 `chinese_subtext_corpus.json`（27 条）、`pragmatic_cards.json`（100 条）
-合并而来，**任何原始语句都未改写**，只补字段、归一场景、统一 `alternative` 口径。
+`corpus_v3.json` 的字段定义与写作口径。V3 由 `v3/src/corpus_v2.json`（20 条）、
+`v3/src/corpus_c27.json`（27 条）、`v3/src/pragmatic_cards.json`（100 条）
+合并而来，**对话原文没有改写**，只补字段、归一场景、统一 `alternative` 口径。
 
-## 一、字段清单
+## 一、字段清单（13 字段）
 
 | 字段 | 类型 | 说明 |
 |---|---|---|
 | `id` | int | 从 1 连续递增，不跳号 |
-| `scene` | str | 统一场景大类，只能取下面 12 个值之一 |
-| `relation` | str | 对话双方的人物关系，只能取下面 16 个值之一 |
+| `scene` | str | 统一场景大类，只能取 12 个值之一 |
+| `relation` | str | 对话双方的人物关系，只能取 16 个值之一 |
 | `dialogue` | array | 2 轮起，每轮 `{speaker, role, text}` |
-| `dialogue[].speaker` | str | 具体角色（室友 / 同学 / 领导 / 家长…），**不用「对方」** |
-| `dialogue[].role` | str | `other`（对方）或 `self`（我） |
+| `dialogue[].speaker` | str | 只有 `我` / `对方` 两个值 |
+| `dialogue[].role` | str | `self`（我）或 `other`（对方），与 `speaker` 一一对应 |
 | `dialogue[].text` | str | 原话，一字不改 |
 | `target_phrase` | str | 要解码的那句话，**必须原样出现在 `dialogue` 里** |
 | `target_speaker` | str | 目标短语是谁说的：`self` 或 `other` |
 | `core_word` | str | 提炼后的核心词，≤8 字，词卡与日历按它归类 |
-| `literal` | str | 字面英文直译，短句，句末带句号 |
-| `intent` | str | 真实意图，中文，40–70 字 |
-| `emotion` | str | 情绪，中文，顿号并列 2–4 个词 |
+| `literal` | str | 字面英文直译，短句，句末是 `.` `!` `?` |
+| `intent` | str | 真实意图，中文，8–70 字；**p100 导入的卡片偏短（8–28 字），补写按 30 字以上** |
+| `emotion` | str | 情绪，中文，顿号并列 2–4 个词，不写句子 |
 | `alternative` | str | **只有台词**，是我可以照着说出口的一句话 |
-| `device` | str | 潜台词靠什么话语策略产生，见第二节 |
-| `source` | str | 来源追溯，`v2#3` / `c27#12` / `p100#45` |
+| `device` | str | 潜台词靠什么话语策略产生，见第四节 |
+| `source` | str | 来源追溯：`v2#3` / `c27#12` / `p100#45`，全库唯一 |
 
-### 对话顺序
+## 二、对话与目标短语
+
+**说话人不用具体角色名**，一律写 `我` / `对方`；具体是谁（室友、销售、领导）看 `relation`。
 
 **不限定谁先说。** 真实对话里「我」先开口很常见（比如我先约人、对方再婉拒），
 早期版本要求 `dialogue[0]` 必须是对方，这条已取消。
 
 `target_speaker` 记录目标短语落在谁嘴里，前端据此决定展示方式：
 
-| `target_speaker` | 场景含义 | 讲解重点 |
-|---|---|---|
-| `other` | 对方说了这句话 | 这句话什么意思、我该怎么接 |
-| `self` | 我说了这句话 | 我为什么这么说、怎么说更好 |
+| `target_speaker` | 场景含义 | 讲解重点 | 条数 |
+|---|---|---|---|
+| `other` | 对方说了这句话 | 这句话什么意思、我该怎么接 | 27 |
+| `self` | 我说了这句话 | 我为什么这么说、怎么说更好 | 120 |
 
-### `core_word` 与 `target_phrase` 的关系
+## 三、`core_word` 与 `target_phrase` 的关系
 
 `target_phrase` 保留原话（可能是整句，如「不了不了，我喝不下了」），
 `core_word` 是提炼出的可归类词（如「不了不了」）。
@@ -46,7 +48,7 @@
 - 整句时 `core_word` 取其中最能代表话术的片段，优先用原文子串；
   子串读不通时允许概括（如「我笔记写得比较乱」→「笔记乱」）。
 
-## 二、`device` 取值
+## 四、`device` 取值
 
 只允许下列 11 个值，不允许自造。
 
@@ -66,10 +68,14 @@
 
 > 前 7 类到 V2 为止，V3 新增后 4 类：合并 127 条外部语料时，「借客观理由婉拒」
 > 「拖延不表态」「受夸谦辞」三类出现频率极高，前 7 类无法覆盖，硬塞会误导标注。
-> `sincere` 是为了不把「真诚道歉」硬归成「过度客气」而设的兜底类。
+> `sincere` 是为了不把「真诚道歉」硬归成「过度客气」而设的兜底类，属待替换项。
 > 分类思路参考上海交大 SwordsmanImp（CCL 2024）的标注体系，未使用其任何条目原文。
 
-## 三、场景与关系取值
+当前分布：`external_excuse` 37 / `sincere` 25 / `hedging` 18 / `understatement` 17 /
+`over_politeness` 13 / `silence_ending` 8 / `deflection` 7 / `false_agreement` 6 /
+`modest_humility` 6 / `ironic_praise` 5 / `self_deprecation` 5。
+
+## 五、场景与关系取值
 
 **场景 12 类**：宿舍、课堂、自习、小组、社团、校园、职场、家庭、恋爱、朋友、线上、消费。
 
@@ -79,23 +85,25 @@
 
 新增取值要先改本文件，并同步 `verify_v3.py` 里的枚举。
 
-## 四、写作口径
+## 六、写作口径
 
 1. **必须具体**：对方台词里要有可感知的细节（时间、数字、具体物件、亲属关系）。
-2. **`intent` 解释「为什么这么说」**，不是复述字面。
+2. **`intent` 解释「为什么这么说」**，不是复述字面；8–70 字，补写时按 30 字以上展开。
    - ❌ 「表示同意」——这是字面
-   - ✅ 「在长辈面前不能顶嘴，这声『行吧』是咽下去的；但让的不是玩具，是『凭什么总是我让』。」
+   - ✅ 「在长辈面前不能顶嘴，这声『行吧』是咽下去的；但让的不是玩具，是『凭什么总是我让』这件事。」
 3. **`alternative` 只写台词**，能直接照着说出口。
    - ❌ 「体面收场：『好，晚安，明天聊。』同时反思刚才是不是一直在单向输出。」
    - ✅ 「好，晚安，明天聊。」
 4. **`emotion` 用顿号并列 2–4 个词**，不要写句子。
 5. **`literal` 是字面直译**，不是意译。它是拿来对照的靶子，翻得太准就失去了对照意义。
 
-## 五、不要做的事
+## 七、不要做的事
 
-- 不要改写已入库条目的 `target_phrase` / `literal` / `intent` / `emotion` / `alternative` /
-  `dialogue[].text`。要改单独提，并说明理由。
+- 不要改写已入库条目的 `target_phrase` / `dialogue[].text` / `intent`。
+  发现笔误要改 `literal` / `emotion` / `alternative` 的，写进 `v3/annot_*.json`，
+  不要动 `v3/src/` 里的源文件；要改对话原文，单独提并说明理由。
 - 不要新增 `device` / `scene` / `relation` 之外的取值。
+- 不要手改 `corpus_v3.json`：它由 `v3/merge_v3.py` 生成，手改会在下次重跑时被覆盖。
 - 不要把 `sincere` 条目当作合格样本继续扩充——它是待替换项。
 
-改完跑 `python verify_v3.py`，全部通过再提交。
+改完跑 `python verify_v3.py`，12 项全绿再提交。
